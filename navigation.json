@@ -1,0 +1,92 @@
+{
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": [
+        "getting-started/welcome",
+        "getting-started/quickstart",
+        "getting-started/account-setup",
+        "getting-started/organization-setup",
+        "getting-started/dashboard-tour"
+      ]
+    },
+    {
+      "group": "Event Management",
+      "pages": [
+        "events/creating-events",
+        "events/event-details",
+        "events/event-scheduling",
+        "events/duplicating-events",
+        "events/cancelling-events"
+      ]
+    },
+    {
+      "group": "Tickets & Pricing",
+      "pages": [
+        "tickets/creating-ticket-types",
+        "tickets/pricing-strategies",
+        "tickets/discounts-promotions",
+        "tickets/add-ons",
+        "tickets/guest-checkout"
+      ]
+    },
+    {
+      "group": "Orders & Box Office",
+      "pages": [
+        "orders/order-management",
+        "orders/box-office",
+        "orders/processing-refunds",
+        "orders/order-reports",
+        "orders/customer-management"
+      ]
+    },
+    {
+      "group": "Check-in & Scanning",
+      "pages": [
+        "checkin/checkin-app",
+        "checkin/scanning-tickets",
+        "checkin/guest-lists",
+        "checkin/checkin-devices",
+        "checkin/checkin-reports"
+      ]
+    },
+    {
+      "group": "Finances & Payouts",
+      "pages": [
+        "finances/payment-methods",
+        "finances/processing-payouts",
+        "finances/financial-reports",
+        "finances/tax-settings",
+        "finances/invoicing"
+      ]
+    },
+    {
+      "group": "Organization & Team",
+      "pages": [
+        "organization/team-management",
+        "organization/user-roles",
+        "organization/organization-profile",
+        "organization/security-settings",
+        "organization/notifications"
+      ]
+    },
+    {
+      "group": "Advanced Features",
+      "pages": [
+        "advanced/api-integration",
+        "advanced/webhooks",
+        "advanced/analytics",
+        "advanced/embedding",
+        "advanced/white-label"
+      ]
+    },
+    {
+      "group": "Troubleshooting",
+      "pages": [
+        "troubleshooting/common-issues",
+        "troubleshooting/contact-support",
+        "troubleshooting/faq"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+---
+title: Getting Started Guide
+description: Your comprehensive guide to getting started with our platform
+---
+
+import { Card, CardGrid } from '../../components/Card';
+import FAQ from '../../components/FAQ';
+
+# Welcome to Our Platform
+
+Get up and running quickly with our step-by-step guide for new users. This guide will help you set up your account, create your first event, and make the most of our platform's features.
+
+## First Steps
+
+<CardGrid>
+  <Card 
+    title="1. Create Your Account"
+    icon="user-plus"
+    link="/help-center/getting-started/creating-an-account"
+  >
+    Learn how to sign up, verify your email, and set up your profile.
+  </Card>
+  
+  <Card 
+    title="2. Set Up Your Organization"
+    icon="building"
+    link="/help-center/getting-started/setting-up-organization"
+  >
+    Add your organization details and customize your settings.
+  </Card>
+  
+  <Card 
+    title="3. Explore the Dashboard"
+    icon="tachometer-alt"
+    link="/help-center/getting-started/dashboard-navigation"
+  >
+    Learn how to navigate and customize your dashboard.
+  </Card>
+</CardGrid>
+
+## Key Features
+
+### Event Management
+- **Create Events**: Set up events in minutes with our intuitive builder
+- **Sell Tickets**: Multiple ticket types, pricing tiers, and discount options
+- **Manage Registrations**: Handle attendee information and check-ins
+
+### Marketing Tools
+- **Email Campaigns**: Send targeted communications
+- **Promo Codes**: Create special offers and track their performance
+- **Analytics**: Track ticket sales and attendee engagement
+
+### Advanced Features
+- **API Access**: Integrate with other tools
+- **Webhooks**: Set up automated notifications
+- **Custom Domain**: Use your own domain for event pages
+
+## Quick Start Video
+
+<div className="aspect-w-16 aspect-h-9 my-8">
+  <iframe 
+    className="w-full h-96 rounded-lg shadow-lg"
+    src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+    title="Platform Overview"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
+
+## Frequently Asked Questions
+
+<FAQ items={[
+  {
+    question: "How do I create my first event?",
+    answer: "Navigate to the Events page and click 'Create Event'. Follow the step-by-step wizard to set up your event details, tickets, and settings."
+  },
+  {
+    question: "What payment methods do you accept?",
+    answer: "We accept all major credit cards, PayPal, and bank transfers. Visit our [payment methods guide](/help/finances/payment-methods) for more details."
+  },
+  {
+    question: "How do I invite team members?",
+    answer: "Go to Organization Settings > Team and click 'Invite Team Member'. Enter their email and assign the appropriate role."
+  },
+  {
+    question: "Can I customize my event page?",
+    answer: "Yes! You can customize colors, add your logo, and even use custom CSS. Check out our [theme customization guide](/help/guides/theme-customization) for details."
+  }
+]} />
+
+## Next Steps
+
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+  <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+    <h3 className="font-semibold text-lg mb-2">Create Your First Event</h3>
+    <p className="text-gray-600 mb-4">Learn how to set up and publish your first event.</p>
+    <a href="/help/events/creating-events" className="text-blue-600 hover:underline">Get Started →</a>
+  </div>
+  
+  <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+    <h3 className="font-semibold text-lg mb-2">Watch Tutorials</h3>
+    <p className="text-gray-600 mb-4">Explore our video guides for quick tips and tutorials.</p>
+    <a href="/tutorials" className="text-blue-600 hover:underline">Watch Now →</a>
+  </div>
+  
+  <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+    <h3 className="font-semibold text-lg mb-2">Join Our Community</h3>
+    <p className="text-gray-600 mb-4">Connect with other users and get support from our community.</p>
+    <a href="https://community.example.com" className="text-blue-600 hover:underline">Join Now →</a>
+  </div>
+</div>
+
+## Need Help?
+
+Our support team is here to assist you. [Contact us](/contact) or check out our [help center](/help) for more resources.
+
+<div className="mt-8 p-6 bg-blue-50 rounded-lg">
+  <h3 className="text-lg font-medium text-blue-800 mb-2">Pro Tip</h3>
+  <p className="text-blue-700">Bookmark this page for quick access to getting started resources. You can also use the search bar at the top to quickly find what you need.</p>
+</div>

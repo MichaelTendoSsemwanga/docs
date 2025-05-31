@@ -1,0 +1,80 @@
+
+Help Center
+1. Getting Started
+Creating an Account
+Logging In
+Setting Up Your Organization
+Navigating the Dashboard
+2. Events
+Creating & Managing Events
+Creating a New Event
+Event Details & Settings
+Event Dates & Times
+Publishing Your Event
+Ticket Types
+Creating Ticket Types
+Setting Prices & Quantities
+Managing Ticket Inventory
+Early Bird & Tiered Pricing
+3. Orders & Sales
+Managing Orders
+Viewing & Filtering Orders
+Processing Refunds
+Managing Attendees
+Exporting Order Data
+Check-in & Scanning
+Setting Up Scan Devices
+Using the Mobile Scanner
+Managing Check-ins
+Troubleshooting Scanning Issues
+4. Finances
+Payouts & Payments
+Setting Up Payment Accounts
+Understanding Payouts
+Viewing Transaction History
+Tax & Invoice Management
+Pricing & Fees
+Understanding Service Fees
+Setting Up Taxes
+Promo Codes & Discounts
+5. Organization Settings
+Team Management
+Adding Team Members
+Setting User Permissions
+Managing Invitations
+Roles & Access Levels
+Profile & Branding
+Customizing Your Profile
+Adding Organization Logo
+Setting Up Email Templates
+Domain & Branding
+6. Advanced Features
+Box Office Management
+Setting Up Box Office
+Managing On-site Sales
+Reporting & Analytics
+Promotions & Marketing
+Creating Promo Codes
+Managing Discounts
+Marketing Tools Integration
+7. Troubleshooting
+Common Issues
+Login Problems
+Payment Processing
+Email Delivery
+Technical Support
+8. API & Integrations
+Webhooks
+API Documentation
+Third-party Integrations
+9. Security
+Account Security
+Data Privacy
+PCI Compliance
+10. Best Practices
+Event Promotion Tips
+Maximizing Ticket Sales
+Managing Large Events
+Customer Support Best Practices
+
+

@@ -1,0 +1,137 @@
+---
+title: Analytics Setup Guide
+description: Learn how to set up and configure analytics for your help center.
+---
+
+# Analytics Setup Guide
+
+Track user interactions and gain insights into how visitors use your help center with our comprehensive analytics setup.
+
+## Getting Started
+
+### Prerequisites
+- Access to your help center's admin panel
+- Google Analytics 4 (GA4) property ID or other analytics provider
+- (Optional) Segment.io account for advanced tracking
+
+## Setting Up Google Analytics
+
+### Step 1: Create a Google Analytics 4 Property
+1. Go to [Google Analytics](https://analytics.google.com/)
+2. Click "Admin" (gear icon)
+3. In the "Account" column, select your account
+4. In the "Property" column, click "Create Property"
+5. Follow the setup wizard to create a new GA4 property
+
+### Step 2: Get Your Measurement ID
+1. In your GA4 property, go to "Data Streams"
+2. Select your web data stream
+3. Copy the "Measurement ID" (starts with 'G-')
+
+### Step 3: Add to Environment Variables
+Add the following to your `.env.local` file:
+
+```env
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+```
+
+## Setting Up Segment (Optional)
+
+### Step 1: Create a Segment Account
+1. Sign up at [Segment.com](https://segment.com/)
+2. Create a new workspace
+3. Add a JavaScript source for your help center
+
+### Step 2: Install Segment Snippet
+Add the following to your `_document.js` or equivalent:
+
+```jsx
+<Script
+  id="segment-script"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: `
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/"+key+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey=key;analytics.SNIPPET_VERSION="4.15.3";
+      analytics.load("${process.env.NEXT_PUBLIC_SEGMENT_WRITE_KEY}");
+      analytics.page();
+    `,
+  }}
+/>
+```
+
+## Tracking Custom Events
+
+### Page Views
+Page views are tracked automatically. To track custom page views:
+
+```js
+import { trackPageView } from '../lib/analytics';
+
+// In your component
+useEffect(() => {
+  trackPageView(window.location.pathname);
+}, []);
+```
+
+### Custom Events
+Track user interactions:
+
+```js
+import { trackEvent } from '../lib/analytics';
+
+// Example: Button click
+trackEvent('Button Clicked', {
+  button_id: 'cta-button',
+  page: 'homepage',
+});
+```
+
+### Search Tracking
+Track search queries and results:
+
+```js
+import { trackSearch } from '../lib/analytics';
+
+// When user performs a search
+const handleSearch = (query, results) => {
+  trackSearch(query, results.length);
+};
+```
+
+## Analyzing the Data
+
+### Google Analytics Reports
+1. **Engagement > Pages and Screens**: See which help articles are most popular
+2. **Engagement > Events**: Track custom events and conversions
+3. **Acquisition > Traffic acquisition**: See where your visitors are coming from
+
+### Custom Dashboards
+Create custom dashboards to monitor:
+- Most searched terms
+- Article helpfulness ratings
+- Common exit pages
+- User flow through documentation
+
+## Privacy Considerations
+
+### GDPR Compliance
+- Add cookie consent banner
+- Anonymize IP addresses in GA4
+- Honor Do Not Track (DNT) headers
+
+### Data Retention
+- Set appropriate data retention periods
+- Configure data deletion requests
+- Document your data collection practices
+
+## Troubleshooting
+
+### Common Issues
+- **No data in GA4?** Check if the measurement ID is correct
+- **Events not showing?** Verify the events are being sent using GA Debugger
+- **High bounce rate?** Check if the tracking snippet is implemented correctly
+
+## Next Steps
+- [Advanced Analytics Configuration](./advanced-analytics)
+- [Creating Custom Reports](./custom-reports)
+- [Integrating with Other Tools](./integrations)

@@ -1,0 +1,118 @@
+# API Integration Guide
+
+Extend the functionality of the Loft platform by integrating with our RESTful API.
+
+## Getting Started
+
+### API Authentication
+1. **API Keys**: Generate your API key from the developer settings
+2. **OAuth 2.0**: For more secure, token-based authentication
+3. **Rate Limits**: 1000 requests per minute per API key
+
+### Base URL
+```
+https://api.loft.events/v1
+```
+
+## Core Endpoints
+
+### Events
+- `GET /events` - List all events
+- `POST /events` - Create a new event
+- `GET /events/{id}` - Get event details
+- `PUT /events/{id}` - Update an event
+- `DELETE /events/{id}` - Delete an event
+
+### Orders
+- `GET /orders` - List all orders
+- `POST /orders` - Create a new order
+- `GET /orders/{id}` - Get order details
+- `POST /orders/{id}/refund` - Process a refund
+
+### Tickets
+- `GET /tickets` - List all ticket types
+- `POST /tickets` - Create a new ticket type
+- `GET /tickets/{id}` - Get ticket type details
+- `PUT /tickets/{id}` - Update a ticket type
+
+## Webhooks
+
+### Available Events
+- `order.completed` - When an order is completed
+- `ticket.checked_in` - When a ticket is checked in
+- `event.published` - When an event is published
+- `payout.processed` - When a payout is processed
+
+### Setting Up Webhooks
+1. Go to **Developer** > **Webhooks**
+2. Click **Add Webhook**
+3. Enter the target URL
+4. Select events to subscribe to
+5. Set the webhook status to active
+
+## SDKs & Libraries
+
+### Official SDKs
+- **JavaScript/Node.js**: `npm install loft-events-sdk`
+- **Python**: `pip install loft-events`
+- **Ruby**: `gem install loft-events`
+
+### Example: Creating an Event (Node.js)
+```javascript
+const Loft = require('loft-events-sdk');
+
+const client = new Loft.APIClient('your-api-key');
+
+const event = await client.events.create({
+  name: 'My Awesome Event',
+  start_time: '2024-07-15T19:00:00Z',
+  end_time: '2024-07-15T23:00:00Z',
+  timezone: 'America/New_York',
+  currency: 'USD',
+  is_online: false,
+  description: 'An amazing event description',
+  // Additional fields...
+});
+```
+
+## Best Practices
+
+### Error Handling
+- Always check for error responses
+- Implement retry logic for failed requests
+- Handle rate limits gracefully
+
+### Security
+- Never expose your API key in client-side code
+- Use environment variables for API keys
+- Regularly rotate your API keys
+
+### Performance
+- Use pagination for large datasets
+- Cache responses when appropriate
+- Minimize the number of API calls
+
+## Rate Limits
+- **Free Plan**: 1,000 requests/minute
+- **Pro Plan**: 5,000 requests/minute
+- **Enterprise**: Custom limits available
+
+## Testing
+- **Sandbox Environment**: `https://api.sandbox.loft.events/v1`
+- Test API keys available in developer settings
+- Mock webhook endpoint available for testing
+
+## Support
+
+### Documentation
+- [API Reference](https://developer.loft.events/api)
+- [Code Examples](https://github.com/loft/example-code)
+- [Changelog](https://developer.loft.events/changelog)
+
+### Getting Help
+- [API Status](https://status.loft.events)
+- [Developer Forums](https://community.loft.events)
+- [Contact Support](/troubleshooting/contact-support)
+
+---
+*Last updated: June 1, 2024*

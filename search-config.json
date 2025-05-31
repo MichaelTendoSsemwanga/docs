@@ -1,0 +1,38 @@
+{
+  "search": {
+    "provider": "algolia",
+    "config": {
+      "appId": "YOUR_APP_ID",
+      "apiKey": "YOUR_SEARCH_ONLY_API_KEY",
+      "indexName": "help_center"
+    },
+    "placeholder": "Search help center...",
+    "hitsPerPage": 10,
+    "snippetLength": 200,
+    "highlightTag": "mark",
+    "searchParameters": {
+      "filters": "",
+      "optionalFilters": [""],
+      "facets": ["section"],
+      "facetFilters": [""]
+    },
+    "theme": {
+      "light": "#f8f9fa",
+      "dark": "#1a1a1a"
+    }
+  },
+  "recentSearches": {
+    "max": 5,
+    "storageKey": "help-center-recent-searches"
+  },
+  "keyboardShortcuts": [
+    {
+      "key": "k",
+      "action": "focusSearch"
+    },
+    {
+      "key": "Escape",
+      "action": "closeSearch"
+    }
+  ]
+}
