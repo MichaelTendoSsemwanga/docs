@@ -1,88 +1,442 @@
 # Setting Up Your Organization
 
-Create and configure your organization profile to manage events, team members, and settings in one place.
+Create and configure your organization profile to manage events, team members, and settings in one place. This guide will walk you through every step of the process with detailed instructions and examples.
 
 ## Creating a New Organization
 
-1. Click on your profile icon in the top-right corner
-2. Select **Create New Organization**
-3. Enter your organization details:
-   - Organization name
-   - Website (optional)
-   - Description
-   - Logo
-   - Timezone
-4. Click **Create Organization**
+### Step 1: Access Organization Creation
+1. Log in to your Loft account
+2. Locate and click on your profile icon in the top-right corner of the dashboard
+3. From the dropdown menu, select **Create New Organization**
 
-## Organization Profile
+### Step 2: Enter Basic Information
+Fill in the following required fields:
+- **Organization Name**: Your organization's legal name (e.g., "Acme Events Inc.")
+  - Maximum 100 characters
+  - Only letters, numbers, spaces, and basic punctuation allowed
+  - Example: `Global Tech Conference 2024`
+
+- **Website** (Optional but recommended)
+  - Include full URL with https://
+  - Example: `https://yourorganization.com`
+
+- **Description**
+  - 250-500 characters recommended
+  - Briefly describe your organization's purpose and the types of events you host
+  - Example: "Global Tech Conference brings together industry leaders and innovators for an annual technology summit featuring keynotes, workshops, and networking opportunities."
+
+### Step 3: Upload Branding Assets
+- **Logo**
+  - Recommended size: 512x512 pixels
+  - File formats: PNG, JPG, or SVG
+  - Maximum file size: 5MB
+  - For best results, use a square image with transparent background
+
+- **Cover Image** (Optional)
+  - Recommended size: 2000x1000 pixels
+  - Ideal for showcasing your organization's visual identity
+  - Will be displayed at the top of your organization's public profile
+
+### Step 4: Configure Settings
+- **Timezone**
+  - Select your organization's primary timezone
+  - This will be the default for all new events
+  - Can be overridden for individual events if needed
+
+### Step 5: Review and Create
+1. Double-check all entered information
+2. Verify that your branding assets appear correctly
+3. Click **Create Organization** to complete the setup
+
+> **Note**: Organization creation typically takes less than 30 seconds. You'll receive a confirmation email once your organization is ready.
+
+### Troubleshooting: Organization Creation Issues
+
+#### Issue: "Organization name already taken"
+- Try adding your location or year (e.g., "Acme Events NY")
+- Check if a colleague has already created the organization
+- Contact support if you believe this is an error
+
+#### Issue: Upload errors for logo/cover image
+- Verify the file format and size
+- Try compressing the image
+- Convert to a different format (e.g., from PNG to JPG)
+- Ensure the image isn't corrupted
+
+## Configuring Your Organization Profile
 
 ### Basic Information
-- Update your organization's contact information
-- Add a description that highlights your organization
-- Upload a logo and cover image
-- Set your organization's primary color scheme
+Update your organization's core details to help attendees recognize your brand:
 
-### Social Media
-- Connect your social media accounts
-- Add links to your website and other online presence
-- Configure social sharing settings
+#### Contact Information
+1. Navigate to **Organization** > **Profile**
+2. Click **Edit** in the Contact Information section
+3. Enter or update:
+   - **Primary Contact Email**: For official communications
+   - **Phone Number**: With country code (e.g., +1 555-123-4567)
+   - **Address**: Physical location (visible to team members only)
+   - **Tax ID**: For invoicing and financial reporting
 
-## Organization Settings
+#### Branding
+1. In the Branding section, click **Edit**
+2. Customize your organization's appearance:
+   - **Primary Color**: Use the color picker or enter a hex code
+   - **Secondary Color**: For accents and highlights
+   - **Font Family**: Choose from available options
+   - **Button Style**: Rounded or square corners
 
-### Billing & Subscription
-- View and update payment methods
-- Manage subscription plans
-- Access billing history and receipts
+### Social Media Integration
+Connect your social media accounts to enhance engagement:
 
-### Security
-- Enable two-factor authentication
-- Set password policies
-- Configure session timeouts
+#### Adding Social Media Accounts
+1. Go to **Organization** > **Social Media**
+2. Click **Connect Account** next to each platform
+3. Follow the prompts to authorize Loft
+4. Set default sharing preferences for events
 
-### Integrations
-- Connect third-party tools and services
-- Set up API access
-- Configure webhooks
+#### Social Media Best Practices
+- **Facebook**: Connect your business page, not personal profile
+- **Twitter**: Use your organization's official handle
+- **LinkedIn**: Connect your company page for professional networking
+- **Instagram**: Business accounts work best for analytics
 
-## Team Management
+#### Social Sharing Settings
+1. Toggle which platforms appear on your event pages
+2. Set default hashtags for sharing
+3. Configure auto-posting for new events
+
+> **Pro Tip**: Use consistent branding across all social media platforms for better recognition.
+
+## Advanced Organization Settings
+
+### Billing & Subscription Management
+
+#### Managing Payment Methods
+1. Navigate to **Organization** > **Billing** > **Payment Methods**
+2. To add a new payment method:
+   - Click **Add Payment Method**
+   - Select credit card or bank transfer
+   - Enter payment details
+   - Click **Save**
+3. To set a default payment method:
+   - Locate the desired payment method
+   - Click **Set as Default**
+
+#### Understanding Your Subscription
+- **Current Plan**: View features and limits
+- **Usage Metrics**: Track event registrations, storage, and other usage
+- **Billing Cycle**: Monthly or annual options
+- **Invoices**: Download past invoices and receipts
+
+### Security Settings
+
+#### Two-Factor Authentication (2FA)
+1. Go to **Organization** > **Security**
+2. Under 2FA, click **Enable**
+3. Choose authentication method:
+   - **Authenticator App** (Recommended)
+     - Scan QR code with Google Authenticator or similar app
+     - Enter the generated code
+   - **SMS Verification**
+     - Enter your mobile number
+     - Enter the verification code sent via SMS
+4. Download and store recovery codes in a secure location
+
+#### Password Policies
+1. In Security settings, locate **Password Requirements**
+2. Configure:
+   - Minimum password length (8-64 characters)
+   - Character requirements (uppercase, numbers, special characters)
+   - Password expiration (30-365 days)
+   - Password history (prevent reuse of last 5-24 passwords)
+
+#### Session Management
+1. Go to **Security** > **Session Settings**
+2. Configure:
+   - Session timeout (15 minutes to 24 hours)
+   - Inactivity logout
+   - Concurrent sessions (allow/disallow multiple logins)
+   - IP restrictions (whitelist specific IP addresses)
+
+### Integration Hub
+
+#### Connecting Third-Party Apps
+1. Navigate to **Organization** > **Integrations**
+2. Browse available integrations or search for specific tools
+3. Click **Connect** next to the desired integration
+4. Follow the authentication flow
+5. Configure integration settings
+
+#### API Access
+1. Go to **Integrations** > **API Access**
+2. Click **Generate New API Key**
+3. Name your key (e.g., "Website Integration")
+4. Set permissions (read/write access)
+5. Copy the generated key (it won't be shown again)
+
+#### Webhook Configuration
+1. In **Integrations**, go to **Webhooks**
+2. Click **Create Webhook**
+3. Configure:
+   - Webhook name
+   - Target URL (your endpoint)
+   - Events to trigger the webhook
+   - Payload format (JSON/XML)
+   - Secret key for verification
+4. Test the webhook to ensure proper configuration
+
+## Comprehensive Team Management
 
 ### Adding Team Members
-1. Go to **Organization** > **Team**
-2. Click **Invite Team Member**
-3. Enter the email address and select a role
+
+#### Step-by-Step Invitation Process
+1. Navigate to **Organization** > **Team**
+2. Click **Invite Team Member** in the top-right corner
+3. In the invitation modal:
+   - **Email Address**: Enter the team member's work email
+   - **Role**: Select from available roles (see below)
+   - **Custom Message** (Optional): Add a personal note
 4. Click **Send Invitation**
 
-### Roles & Permissions
-- **Owner**: Full access to all organization settings
-- **Admin**: Can manage events and team members
-- **Event Manager**: Can create and manage events
-- **Box Office**: Can process orders and check-ins
-- **Viewer**: Read-only access
+#### Resending Invitations
+1. Locate the pending invitation in the **Pending Invites** section
+2. Click the three dots menu
+3. Select **Resend Invitation**
 
-## Best Practices
+#### Managing Pending Invitations
+- **View Status**: See when invitations were sent
+- **Copy Invite Link**: For direct sharing
+- **Revoke Invitation**: To cancel pending invites
 
-### Naming Your Organization
-- Use your organization's legal name
-- Keep it consistent with your other branding
-- Avoid special characters or abbreviations
+### Understanding Roles & Permissions
 
-### Team Structure
-- Assign roles based on responsibilities
-- Limit admin access to trusted team members
-- Regularly review and update team access
+| Role | Event Management | Team Management | Financial Data | Event Creation | Check-in | Reports |
+|------|------------------|-----------------|----------------|----------------|----------|----------|
+| **Owner** | Full Access | Full Access | Full Access | Full Access | Full Access | Full Access |
+| **Admin** | Full Access | Limited | Full Access | Yes | Yes | Full Access |
+| **Event Manager** | Full Access | No | Limited | Yes | Yes | Limited |
+| **Box Office** | Limited | No | Limited | No | Full Access | Limited |
+| **Viewer** | Read-only | No | No | No | No | Read-only |
 
-## Troubleshooting
+#### Customizing Permissions
+1. Go to **Organization** > **Team** > **Roles & Permissions**
+2. Select a role to modify or click **Create New Role**
+3. Toggle individual permissions:
+   - Event creation and editing
+   - Financial data access
+   - Team management
+   - Check-in capabilities
+   - Report generation
+4. Click **Save Changes**
 
-### Common Issues
-- **Invitation not received**: Check spam folder or resend invitation
-- **Permission denied**: Contact an organization admin
-- **Can't update settings**: Verify your user role has the necessary permissions
+### Best Practices for Team Management
+
+#### Onboarding New Team Members
+1. Send welcome email with role expectations
+2. Provide access to relevant documentation
+3. Schedule a training session
+4. Assign a mentor for the first week
+
+#### Security Recommendations
+- Regularly audit team member access
+- Remove former employees immediately
+- Use the principle of least privilege
+- Enable activity logging for sensitive actions
+
+#### Team Communication
+- Set up team announcements
+- Create a communication protocol
+- Establish escalation paths for issues
+
+## Advanced Best Practices
+
+### Organization Naming Conventions
+
+#### Legal and Branding
+- **Legal Compliance**: Use your organization's registered legal name for contracts and invoices
+- **Brand Consistency**: Match your name across all platforms (website, social media, etc.)
+- **Example**:
+  - ❌ "TechConf 2024" (Too specific to one event)
+  - ✅ "Global Technology Foundation" (Official name)
+  - ✅ "GTF Events" (Commonly used abbreviation)
+
+#### Technical Considerations
+- **Character Limits**: Maximum 100 characters
+- **Special Characters**: Avoid using:
+  - Quotation marks (", ')
+  - Special symbols (@, #, $, etc.)
+  - Emojis or non-standard characters
+- **Case Sensitivity**: The system is case-sensitive but displays consistently
+
+### Optimizing Team Structure
+
+#### Role Assignment Matrix
+| Department | Recommended Roles | Key Responsibilities |
+|------------|-------------------|----------------------|
+| Executive | Owner | Strategic decisions, financial oversight |
+| Marketing | Admin, Event Manager | Event creation, promotion |
+| Operations | Event Manager, Box Office | Day-to-day event management |
+| Finance | Admin | Financial reports, payouts |
+| Volunteers | Box Office | Check-in, attendee support |
+
+#### Access Control Strategy
+1. **Tiered Access Model**
+   - Level 1: Core Team (Owners/Admins)
+   - Level 2: Department Heads (Event Managers)
+   - Level 3: Frontline Staff (Box Office)
+   - Level 4: External Partners (Limited Viewer)
+
+2. **Temporary Access**
+   - Set expiration dates for contractors
+   - Create time-limited roles for seasonal staff
+   - Implement IP restrictions for sensitive roles
+
+### Data Management
+
+#### File Organization
+- Create a consistent naming convention:
+  - `YYYY-MM-EventName-DocumentType-Version`
+  - Example: `2024-06-TechSummit-SponsorDeck-v2.pdf`
+
+#### Backup Strategy
+1. **Automatic Backups**
+   - Enable daily database backups
+   - Store backups for minimum 90 days
+   - Test restoration process quarterly
+
+2. **Manual Exports**
+   - Export attendee lists after major events
+   - Download financial reports monthly
+   - Archive old events annually
+
+### Security Best Practices
+
+#### Regular Audits
+- **Monthly**: Review active users and permissions
+- **Quarterly**: Audit API keys and integrations
+- **Bi-annually**: Review security logs for anomalies
+
+#### Training Requirements
+- **New Hires**: Security orientation within first week
+- **Quarterly**: Security awareness training
+- **Annually**: Full policy review and recertification
+
+## Comprehensive Troubleshooting Guide
+
+### Common Issues and Solutions
+
+#### Issue: "Invitation Not Received"
+1. **Check Spam/Junk Folder**
+   - Search for "noreply@loft.events" or "invite"
+   - Mark as "Not Spam" if found
+
+2. **Resend Invitation**
+   - Organization Owner/Admin should:
+     1. Go to **Organization** > **Team**
+     2. Find the pending invite
+     3. Click **Resend**
+
+3. **Domain Whitelisting**
+   - Ask IT to whitelist `@loft.events`
+   - Check email security settings
+
+4. **Alternative Email**
+   - Try a different email address
+   - Consider using a company email instead of personal
+
+#### Issue: "Permission Denied"
+1. **Verify Your Role**
+   - Check your current role in **Your Profile**
+   - Compare with required permissions for the action
+
+2. **Request Access**
+   - Contact your Organization Admin
+   - Specify what you're trying to do
+   - Include any error messages
+
+3. **Common Permission Scenarios**
+   - Creating events: Event Manager role or above
+   - Viewing financials: Admin or Owner
+   - Managing team: Admin or Owner
+
+#### Issue: "Can't Update Settings"
+1. **Check Role Permissions**
+   - Only certain roles can modify organization settings
+   - Verify you're logged in with the correct account
+
+2. **Browser Issues**
+   - Clear cache and cookies
+   - Try incognito/private mode
+   - Test with a different browser
+
+3. **System Requirements**
+   - Ensure your browser is up to date
+   - Disable any conflicting extensions
+   - Check internet connection stability
+
+### Advanced Troubleshooting
+
+#### API Integration Issues
+1. **Authentication Errors**
+   - Verify API key is correct
+   - Check key expiration
+   - Ensure proper permissions are set
+
+2. **Webhook Failures**
+   - Check endpoint URL
+   - Verify SSL certificate
+   - Review error logs for specific failure reasons
+
+#### Performance Problems
+1. **Slow Loading**
+   - Check internet speed
+   - Reduce number of active browser tabs
+   - Clear browser cache
+
+2. **Timeout Issues**
+   - Increase timeout settings
+   - Process large exports in smaller batches
+   - Contact support if persistent
 
 ## Next Steps
 
-- [Create your first event](/events/creating-events)
-- [Set up your payment methods](/finances/payment-methods)
-- [Invite team members](/organization/team-management)
+### Immediate Actions
+1. [Create your first event](/events/creating-events)
+   - Step-by-step event setup guide
+   - Best practices for event configuration
+   - Common setup mistakes to avoid
+
+2. [Set up payment methods](/finances/payment-methods)
+   - Connect bank accounts
+   - Configure payment processors
+   - Set up payout schedules
+
+3. [Invite team members](/organization/team-management)
+   - Role assignment guide
+   - Onboarding checklist
+   - Permission management
+
+### Recommended Learning Path
+1. **Week 1: Setup & Configuration**
+   - Complete organization profile
+   - Set up team structure
+   - Configure basic settings
+
+2. **Week 2: Event Management**
+   - Create your first event
+   - Set up ticket types
+   - Configure check-in options
+
+3. **Week 3: Advanced Features**
+   - Set up reporting
+   - Configure integrations
+   - Implement security measures
+
+### Additional Resources
+- [Video Tutorials](#) (coming soon)
+- [Live Training Webinars](#) (schedule available)
+- [Community Forum](#) (join the discussion)
 
 ---
-*Last updated: June 1, 2024*
+*Last updated: June 1, 2024*  
+*Need help? Contact our [Support Team](#) or join our [Community Forum](#) for peer assistance.*

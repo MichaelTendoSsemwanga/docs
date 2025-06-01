@@ -1,74 +1,199 @@
 ---
-title: Team Management
+title: "Complete Guide to Team Management & Permissions"
+description: "Step-by-step guide to managing your team's access, roles, and permissions in Loft. Learn how to set up and manage your team effectively."
 ---
 
-# Team Management
+# Team Management & Permissions: Complete Guide
 
-Collaborate effectively with your team by managing user roles and permissions in your organization.
+*Streamline your event operations with effective team management. This guide covers everything from inviting team members to advanced permission settings for different roles in your organization.*
 
-## Adding Team Members
+## Table of Contents
+- [Before You Start](#before-you-start)
+- [Step 1: Invite Team Members](#step-1-invite-team-members)
+- [Step 2: Understand Permission Levels](#step-2-understand-permission-levels)
+- [Step 3: Assign Specific Permissions](#step-3-assign-specific-permissions)
+- [Step 4: Manage Event Access](#step-4-manage-event-access)
+- [Step 5: Set Up Approval Workflows](#step-5-approval-workflows)
+- [Step 6: Review & Audit Access](#step-6-audit-access)
+- [Pro Tips & Best Practices](#pro-tips)
+- [Troubleshooting](#troubleshooting)
+- [Need Help?](#help)
 
-1. Navigate to **Organization Settings** > **Team**
-2. Click the **Invite Team Member** button
-3. Enter the team member's email address
-4. Select their role from the dropdown menu
-5. Click **Send Invitation**
+## Before You Start
 
-## Understanding Roles & Permissions
+### What You'll Need:
+- Organization admin access
+- Team members' email addresses
+- Understanding of your organizational structure
+- (Optional) List of events and required access levels
 
-### Administrator
-- **Full access** to all organization settings
-- Can manage team members and their permissions
-- Can create, edit, and delete events
-- Has access to all financial information and reports
-- Can manage organization billing and subscriptions
+### Quick Links:
+- [Download Team Roster Template](#)
+- [Watch Permissions Tutorial](#)
+- [Join Team Management Webinar](#)
 
-### Event Manager
-- Can create and manage events
-- Can manage orders and attendees
-- Can access event reports and analytics
-- Cannot manage organization settings or billing
-- Cannot invite or manage team members
+## Step 1: Invite Team Members
 
-### Box Office Staff
-- Can assist with check-ins and order processing
-- Limited access to event management
-- View-only access to reports
-- Cannot modify event settings or organization details
+### 1.1 Send Invitations
+1. Go to **Organization Settings** > **Team**
+2. Click **+ Invite Team Member**
+3. Enter email addresses (multiple supported)
+4. Select initial role (can be changed later)
+5. Add optional note about responsibilities
+6. Click **Send Invitations**
 
-## Managing Invitations
+### 1.2 Track Invitations
+- **Pending Invitations** section shows status
+- Resend or revoke as needed
+- Invitations expire in 7 days
 
-- View all pending invitations in the **Pending Invitations** section
-- Click **Resend** to resend an invitation
-- Click **Revoke** to cancel a pending invitation
-- Track invitation status and expiration dates
+## Step 2: Understand Permission Levels
 
-## Best Practices for Team Management
+### 2.1 Standard Roles Overview
 
-### Role Assignment
-- Assign the **minimum required permissions** for each team member
-- Regularly review and update roles as team members' responsibilities change
-- Use the **Notes** field to document role-specific responsibilities
+| Role | Key Permissions | Best For |
+|------|-----------------|----------|
+| **Owner** | Full organization access | Founders, C-level |
+| **Admin** | Full access except billing | Department heads |
+| **Event Manager** | Create/manage events | Event organizers |
+| **Box Office** | Process orders/check-ins | Frontline staff |
+| **Viewer** | Read-only access | Stakeholders |
 
-### Security
-- Enable **two-factor authentication** for all team members
-- Regularly review and revoke access for inactive team members
-- Use **SSO** (Single Sign-On) if available for your organization
+### 2.2 Custom Roles (Enterprise)
+1. Go to **Settings** > **Roles & Permissions**
+2. Click **Create Custom Role**
+3. Name and describe the role
+4. Toggle specific permissions
+5. Click **Save Role**
 
-### Communication
-- Clearly communicate role expectations to each team member
-- Document team member responsibilities
-- Set up regular check-ins with your team
+## Step 3: Assign Specific Permissions
+
+### 3.1 Granular Access Control
+1. Navigate to **Team**
+2. Click on team member's name
+3. Select **Edit Permissions**
+4. Toggle specific permissions:
+   - Event creation
+   - Financial data
+   - Attendee management
+   - Reporting access
+   - Team management
+
+### 3.2 Department-Based Access
+1. Create department tags (e.g., Marketing, Operations)
+2. Assign team members to departments
+3. Set department-specific permissions
+4. Apply department filters in reports
+
+## Step 4: Manage Event Access
+
+### 4.1 Event-Specific Permissions
+1. Go to **Events** > [Select Event]
+2. Click **Team Access**
+3. Search and add team members
+4. Set access level:
+   - **Manager**: Full event control
+   - **Editor**: Modify content
+   - **Viewer**: Read-only access
+
+### 4.2 Bulk Update Access
+1. Select multiple events
+2. Click **Manage Access**
+3. Add/remove team members
+4. Set permissions for all selected events
+
+## Step 5: Approval Workflows
+
+### 5.1 Set Up Approvals
+1. Go to **Workflows** > **Approvals**
+2. Create new workflow
+3. Define triggers (e.g., refunds over $100)
+4. Assign approvers
+5. Set escalation rules
+
+### 5.2 Common Approval Types
+- Financial approvals
+- Content publishing
+- Access requests
+- Discount applications
+
+## Step 6: Audit Access
+
+### 6.1 Review User Activity
+1. Go to **Audit Logs**
+2. Filter by:
+   - User
+   - Date range
+   - Action type
+   - Event
+3. Export logs as needed
+
+### 6.2 Access Reviews
+1. Schedule quarterly access reviews
+2. Identify inactive users
+3. Verify role appropriateness
+4. Document changes
+
+## Pro Tips & Best Practices
+
+### Security First
+1. **Principle of Least Privilege**
+   - Start with minimal access
+   - Add permissions as needed
+   - Document all exceptions
+
+2. **Regular Audits**
+   - Quarterly access reviews
+   - Offboarding checklist
+   - Permission change logs
+
+### Team Onboarding
+1. **New Hire Checklist**
+   - Required training
+   - Access request form
+   - Mentor assignment
+
+2. **Role Templates**
+   - Create standard role templates
+   - Document responsibilities
+   - Include in onboarding docs
 
 ## Troubleshooting
 
-### Common Issues
-- **Invitation not received?** Check the spam/junk folder or resend the invitation
-- **Incorrect permissions?** Verify the user's role and adjust as needed
-- **Can't see certain features?** The user's role may not have access to those features
+### Common Issues & Solutions
 
-## Next Steps
+#### "Access Denied" Errors
+1. Verify user's role
+2. Check event-specific permissions
+3. Look for conflicting department rules
 
-- [Profile & Branding](./profile-branding)
-- [Security Settings](./security)
-- [Managing Events](../events/creating-events)
+#### Missing Features
+1. Check user's role permissions
+2. Verify department restrictions
+3. Look for browser cache issues
+
+#### Invitation Problems
+1. Check spam/junk folders
+2. Verify email address
+3. Resend with different email if needed
+
+## Need Help?
+
+### Immediate Support
+- **In-App Chat**: Available in the dashboard
+- **Phone**: (555) 123-4568 (24/7 team support)
+- **Email**: support@loft.events
+
+### Learning Resources
+- [Video Tutorials](#)
+- [Team Management Webinar Series](#)
+- [Case Studies](#)
+
+### Community & Support
+- [Help Center](#)
+- [Community Forum](#)
+- [FAQs](#)
+
+---
+*Last updated: June 1, 2024*  
+*Need help with team management? Our support team is here to assist!*

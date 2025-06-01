@@ -1,80 +1,280 @@
+---
+title: Discounts & Promotions
+description: Comprehensive guide to creating and managing discount codes, promotional offers, and special pricing strategies for your events
+---
+
 # Discounts & Promotions
 
-Create and manage discounts and promotional offers to boost ticket sales for your events.
+Maximize ticket sales and engage your audience with powerful discount and promotion tools. This guide covers everything from basic discount codes to advanced promotional strategies.
 
-## Creating Discount Codes
+## Table of Contents
+- [Discount Code Types](#discount-code-types)
+- [Creating Discounts](#creating-discounts)
+- [Advanced Configuration](#advanced-configuration)
+- [Promotion Strategies](#promotion-strategies)
+- [Managing Promotions](#managing-promotions)
+- [Analytics & Reporting](#analytics--reporting)
+- [Best Practices](#best-practices)
+- [Troubleshooting](#troubleshooting)
+- [Next Steps](#next-steps)
 
-### Basic Setup
-1. Navigate to your event dashboard
-2. Go to **Tickets** > **Discounts**
-3. Click **Create Discount Code**
-4. Enter the following details:
-   - **Code**: The promotional code attendees will use
-   - **Discount Type**: Percentage or fixed amount
-   - **Value**: The discount amount
-   - **Usage Limit**: Maximum number of times the code can be used
-   - **Valid From/To**: Date range for the discount
+## Discount Code Types
 
-### Advanced Options
-- **Minimum Order Value**: Set a minimum cart total required
-- **Applies To**: Specific ticket types or all tickets
-- **One-time Use**: Limit to one use per customer
-- **Hidden**: Create private codes for specific audiences
+### 1. Percentage Discounts
+- **Best for**: General promotions, early bird sales
+- **Example**: `SUMMER20` for 20% off
+- **Implementation**:
+  ```
+  Base Price: $100
+  Discount: 20%
+  Final Price: $80
+  ```
 
-## Promotion Types
+### 2. Fixed Amount Discounts
+- **Best for**: Dollar-amount reductions
+- **Example**: `SAVE50` for $50 off
+- **Implementation**:
+  ```
+  Base Price: $200
+  Discount: $50
+  Final Price: $150
+  ```
 
-### Early Bird Discounts
-- Set time-limited discounts to encourage early sales
-- Automatically switch to regular pricing after the deadline
+### 3. BOGO (Buy One, Get One)
+- **Best for**: Increasing attendance
+- **Example**: `BOGO50` for 50% off second ticket
+- **Implementation**:
+  ```
+  Ticket 1: $100
+  Ticket 2: $50 (50% off)
+  Total: $150
+  ```
 
-### Group Discounts
-- Offer discounts for bulk purchases
-- Set tiered pricing (e.g., 10% off for 5+ tickets, 15% off for 10+)
+### 4. Bulk/Volume Discounts
+- **Best for**: Group sales
+- **Example**: `GROUP10` for 10% off 5+ tickets
+- **Implementation**:
+  ```
+  5 tickets @ $90 each (10% off $100)
+  Total: $450
+  ```
 
-### Member/Student Discounts
-- Create special pricing for specific groups
-- Require verification if needed
+## Creating Discounts
 
-### Promotional Pricing
-- Limited-time price reductions
-- Flash sales with countdown timers
+### Step 1: Access Discount Manager
+1. Log in to your Loft account
+2. Select your event
+3. Navigate to **Tickets** > **Discounts**
+4. Click **+ Create Discount**
+
+### Step 2: Configure Basic Settings
+
+#### Required Fields
+- **Discount Name**: Internal reference (not visible to customers)
+  - Example: `Q3 Student Discount`
+  
+- **Discount Code**: What customers will enter
+  - Best practices:
+    - 6-10 characters
+    - All caps
+    - No special characters
+    - Example: `STUDENT25`
+
+- **Discount Type**:
+  - Percentage (%)
+  - Fixed amount ($)
+  - Free shipping
+  - BOGO
+
+- **Discount Value**:
+  - For %: Whole numbers (e.g., `20` for 20%)
+  - For $: Amount to subtract (e.g., `25` for $25 off)
+
+### Step 3: Set Rules & Restrictions
+
+#### Availability
+- **Start/End Date**: 
+  - Set specific date/time
+  - Use timezone selector
+  - Example: `2024-06-15 09:00 AM EST` to `2024-06-30 11:59 PM EST`
+
+#### Usage Limits
+| Setting | Description | Example |
+|---------|-------------|---------|
+| Total Uses | Max redemptions | `100` codes |
+| Per Customer | Uses per email | `1` use |
+| Min. Order | Minimum cart value | `$100` |
+| Max. Discount | Cap on savings | `$50` max |
+
+#### Ticket Restrictions
+- **Apply to**:
+  - All tickets
+  - Specific ticket types
+  - Ticket categories
+  - Price ranges
+
+## Advanced Configuration
+
+### Stacking & Combinations
+
+#### Stacking Rules
+| Setting | Description |
+|---------|-------------|
+| **Can combine with** | Other discounts, member benefits |
+| **Cannot combine with** | Other promotions, group rates |
+| **Auto-apply** | No code needed |
+
+#### Example Stacking Scenario
+```
+Base Price: $200
+- Member Discount: 10% (-$20)
+- Promo Code: SUMMER15 (-$30)
+- Early Bird: 5% (-$10)
+Final Price: $140
+```
+
+### Conditional Discounts
+
+#### Time-Based
+- Early bird pricing
+- Flash sales
+- Last-chance offers
+
+#### Behavior-Based
+- First-time buyers
+- Repeat customers
+- Abandoned cart
+
+#### Customer Segments
+- Email lists
+- Geographic location
+- Referral source
+
+## Promotion Strategies
+
+### 1. Early Bird Campaigns
+```
+Phase 1: Super Early Bird (First 100 tickets) - 40% off
+Phase 2: Early Bird (Next 200 tickets) - 25% off
+Phase 3: Regular Pricing - Full price
+```
+
+### 2. Limited-Time Offers
+- **Flash Sale**: 24-48 hour discount
+- **Holiday Promo**: Special event pricing
+- **Anniversary Sale**: Annual celebration deals
+
+### 3. Targeted Promotions
+| Audience | Strategy | Code Example |
+|----------|----------|--------------|
+| Students | ID verification | STUDENT2024 |
+| Members | Exclusive access | MEMBER25 |
+| Past Attendees | Loyalty reward | RETURN10 |
 
 ## Managing Promotions
 
-### Monitoring Performance
-- Track redemption rates
-- Monitor revenue impact
-- View which ticket types are most popular with discounts
+### Bulk Operations
+1. **Import/Export**
+   - CSV template for multiple codes
+   - Generate code batches
+   - Update existing promotions
 
-### Pausing/Ending Promotions
-- Temporarily disable discount codes
-- Set automatic expiration dates
-- Extend successful promotions
+2. **Scheduled Changes**
+   - Auto-activate/deactivate
+   - Price increases
+   - Inventory updates
+
+### Performance Monitoring
+
+#### Key Metrics
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Redemption Rate | % of codes used | 15-25% |
+| Revenue Impact | Additional sales | +20% |
+| New vs. Returning | Customer acquisition | 40/60% |
+
+#### A/B Testing
+1. Create multiple code variations
+2. Test different:
+   - Discount amounts
+   - Code names
+   - Time windows
+3. Analyze performance
+4. Scale what works
+
+## Analytics & Reporting
+
+### Standard Reports
+1. **Redemption Summary**
+   - Total uses
+   - Revenue impact
+   - Popular codes
+
+2. **Customer Insights**
+   - New vs. returning
+   - Geographic data
+   - Device usage
+
+### Custom Exports
+- Date range selection
+- Filter by code/offer
+- Include UTM parameters
+- Export formats: CSV, Excel, PDF
 
 ## Best Practices
 
-### Code Naming
-- Use all caps for better readability
-- Keep codes short but memorable
-- Avoid easily confused characters (0/O, 1/I/l)
+### Code Generation
+- **Do**: `SUMMERSALE24`
+- **Don't**: `sale-2024-code-001`
 
-### Promotion Strategy
-- Test different discount amounts
-- Create urgency with time limits
-- Target specific customer segments
-- Analyze which promotions drive the most sales
+### Timing Strategy
+| Timing | Discount | Purpose |
+|--------|----------|---------|
+| 90+ days out | 10-15% | Early adoption |
+| 30-60 days | 15-25% | Drive urgency |
+| <30 days | 25-40% | Fill remaining spots |
+| Last week | 0-10% | Maximize revenue |
+
+### Legal Compliance
+- Expiration dates
+- Terms & conditions
+- Regional regulations
+- Tax implications
 
 ## Troubleshooting
 
-### Common Issues
-- **Code not working**: Check validity dates and usage limits
-- **Discount not applying**: Verify ticket type eligibility
-- **Multiple discounts**: Only one code can be used per order
+### Common Issues & Solutions
 
-## Need Help?
-- [Contact Support](/troubleshooting/contact-support)
-- [Promotions FAQ](/troubleshooting/faq#promotions)
-- [View Promotion Analytics](#)
+#### Discount Not Applying
+| Symptom | Possible Cause | Solution |
+|---------|----------------|-----------|
+| "Invalid code" | Typo/expired | Verify code and dates |
+| No price change | Cart minimum not met | Add more items |
+| Partial discount | Ticket restrictions | Check eligible items |
+
+#### Performance Issues
+- **Low Redemption**:
+  - Increase discount amount
+  - Extend promotion period
+  - Improve promotion visibility
+  
+- **High Redemption, Low Revenue**:
+  - Add minimum order value
+  - Reduce discount percentage
+  - Limit to specific ticket types
+
+## Next Steps
+
+### Additional Resources
+- [Video: Advanced Promo Strategies](#)
+- [Webinar: Maximizing Ticket Sales](#)
+- [Case Studies](#)
+
+### Related Guides
+- [Creating Ticket Types](./creating-ticket-types)
+- [Email Marketing](../marketing/email-campaigns)
+- [Analytics Dashboard](../reports/overview)
 
 ---
-*Last updated: June 1, 2024*
+*Last updated: June 1, 2024*  
+*Need help? Contact our [Support Team](#) or join our [Community Forum](#) for peer assistance.*

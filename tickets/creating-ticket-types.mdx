@@ -1,72 +1,230 @@
+---
+title: Creating and Managing Ticket Types
+description: Comprehensive guide to creating, customizing, and managing ticket types for your events with Loft
+---
+
 # Creating and Managing Ticket Types
 
-Learn how to create and manage different types of tickets for your events using Loft's powerful ticketing system.
+Welcome to the complete guide for managing tickets in Loft. This documentation covers everything from basic ticket creation to advanced configuration options for optimal event management.
 
-## Creating a New Ticket Type
+## Table of Contents
+- [Ticket Basics](#ticket-basics)
+- [Creating Ticket Types](#creating-ticket-types)
+- [Advanced Configuration](#advanced-configuration)
+- [Pricing Strategies](#pricing-strategies)
+- [Managing Inventory](#managing-inventory)
+- [Access Control](#access-control)
+- [Integration & Automation](#integration--automation)
+- [Best Practices](#best-practices)
+- [Troubleshooting](#troubleshooting)
+- [Next Steps](#next-steps)
 
-1. Navigate to your event dashboard
-2. Click on **Tickets** in the left sidebar
-3. Click **+ Add Ticket Type**
-4. Fill in the ticket details:
-   - **Ticket Name**: General Admission, VIP, Early Bird, etc.
-   - **Description**: What's included with this ticket
-   - **Price**: Set the ticket price (or mark as free)
-   - **Quantity Available**: Total number of tickets for this type
-   - **Sales Start/End**: When the tickets will be available for purchase
+## Ticket Basics
 
-## Ticket Type Settings
+### What is a Ticket Type?
+A ticket type defines the characteristics of a specific admission option for your event, including:
+- Price and availability
+- Access level
+- Included benefits
+- Sales rules and restrictions
 
-### Visibility Options
-- **Public**: Visible to everyone
-- **Password Protected**: Requires a password to view/purchase
-- **Hidden**: Only accessible via direct link
+### When to Create Multiple Ticket Types
+Consider creating separate ticket types for:
+- Different attendee categories (General, VIP, Student)
+- Various access levels (Standard, Premium, Backstage)
+- Time-based pricing (Early Bird, Regular, Last Chance)
+- Group or bulk purchase options
 
-### Sales Restrictions
-- Set purchase limits per customer
-- Require promo codes for access
-- Restrict to specific customer groups
+## Creating Ticket Types
 
-### Advanced Options
-- Set ticket delivery method (e-ticket, will-call, etc.)
-- Configure ticket transfer settings
-- Set up automated email confirmations
+### Step 1: Access Ticket Management
+1. Log in to your Loft account
+2. Select your event from the dashboard
+3. Click **Tickets** in the left navigation menu
+4. Click **+ Add Ticket Type**
 
-## Managing Existing Ticket Types
+### Step 2: Configure Basic Information
 
-### Editing Ticket Types
-1. Go to the Tickets section of your event
-2. Click the **Edit** button next to the ticket type
-3. Make your changes and click **Save**
+#### Required Fields
+- **Ticket Name** (Max 50 characters)
+  - Be specific and descriptive
+  - Example: `VIP All-Access Pass` or `Student General Admission`
+  
+- **Description** (Supports Markdown)
+  - Clearly state what's included
+  - List benefits or restrictions
+  - Example:
+    ```
+    ## VIP Benefits
+    - Priority seating
+    - Exclusive lounge access
+    - Meet & greet with speakers
+    ```
 
-### Pausing Sales
-Temporarily stop sales for a ticket type without deleting it.
+- **Price**
+  - Set base price (or mark as free)
+  - Add fees (flat or percentage)
+  - Choose if fees are absorbed or passed to buyer
 
-### Archiving Tickets
-Remove old ticket types from public view while keeping the sales data.
+#### Optional Fields
+- **SKU/Code**: For inventory tracking
+- **Sales Start/End**: Automate ticket availability
+- **Quantity Available**: Set maximum capacity
+
+### Step 3: Configure Access & Restrictions
+
+#### Visibility Settings
+| Option | Description | Use Case |
+|--------|-------------|----------|
+| **Public** | Visible to all | General admission |
+| **Password Protected** | Requires access code | Private events |
+| **Hidden** | Direct link only | Special guests |
+| **Members Only** | For logged-in members | Member exclusives |
+
+#### Purchase Limits
+- **Per Order**: Min/Max tickets per transaction
+- **Per Customer**: Total tickets per person/email
+- **Custom Rules**: Based on attendee attributes
+
+## Advanced Configuration
+
+### Ticket Delivery Methods
+1. **E-Ticket** (Default)
+   - Instant PDF download
+   - Mobile-friendly QR codes
+   - Apple Wallet/Google Pay integration
+
+2. **Will Call**
+   - Pickup at venue
+   - ID verification options
+   - Designated pickup times
+
+3. **Print-at-Home**
+   - Custom ticket design
+   - Barcode/QR code generation
+   - Security features
+
+### Custom Questions
+Collect additional attendee information:
+1. **Standard Fields**
+   - Dietary restrictions
+   - T-shirt size
+   - Session preferences
+
+2. **Conditional Logic**
+   - Show/hide questions based on responses
+   - Required/optional fields
+   - File uploads (e.g., vaccination proof)
+
+## Pricing Strategies
+
+### Tiered Pricing
+```
+Early Bird (Ends MM/DD)   $99
+Regular (MM/DD - MM/DD)  $149
+Last Minute (After MM/DD) $199
+```
+
+### Group Discounts
+| Quantity | Discount | Price Each |
+|----------|----------|------------|
+| 1-4      | 0%       | $100       |
+| 5-9      | 10%      | $90        |
+| 10+      | 20%      | $80        |
+
+### Dynamic Pricing
+- Automatic price increases at set intervals
+- Demand-based pricing
+- Limited-time flash sales
+
+## Managing Inventory
+
+### Real-time Tracking
+- Available/remaining count
+- Sales velocity monitoring
+- Low stock alerts
+
+### Waitlist Management
+1. Enable waitlist when sold out
+2. Set maximum waitlist capacity
+3. Configure automated notifications
+
+### Transfer & Resale
+- Allow ticket transfers
+- Set transfer deadlines
+- Enable fan-to-fan resale
+
+## Access Control
+
+### Ticket Validation
+- Unique barcode/QR codes
+- Duplicate detection
+- Blacklist management
+
+### Check-in Tools
+- Mobile check-in app
+- Offline mode support
+- Team management
+
+## Integration & Automation
+
+### API Access
+- Real-time inventory updates
+- Custom booking engines
+- Third-party integrations
+
+### Workflow Automation
+- Automated confirmation emails
+- Reminder sequences
+- Post-event follow-ups
 
 ## Best Practices
 
 ### Naming Conventions
-- Be clear and descriptive
-- Include important details (e.g., "VIP - Front Row Access")
-- Keep names concise but informative
+| Do | Don't |
+|----|-------|
+| `VIP - Front Row` | `Ticket Type 1` |
+| `Student (ID Required)` | `Discounted` |
+| `Early Bird - Ends 6/15` | `Special Price` |
 
-### Pricing Strategy
-- Consider early bird pricing
-- Create tiered pricing for different attendee types
-- Include fees in your pricing considerations
+### Pricing Psychology
+- Use .95 or .99 endings
+- Show value comparisons
+- Highlight popular/recommended options
+
+### Inventory Management
+- Release tickets in batches
+- Hold back inventory for VIPs/media
+- Monitor sales velocity
 
 ## Troubleshooting
 
-### Common Issues
-- **Tickets not appearing**: Check visibility and sales date settings
-- **Pricing errors**: Verify currency and fee settings
-- **Capacity issues**: Ensure you haven't reached your ticket limits
+### Common Issues & Solutions
 
-## Need Help?
+#### Sales Not Processing
+| Symptom | Possible Cause | Solution |
+|---------|----------------|-----------|
+| Payment declined | Card issues | Try alternative payment |
+| Stuck on checkout | Browser cache | Clear cookies/cache |
+| Price mismatch | Currency settings | Verify event currency |
 
-- [Contact Support](/troubleshooting/contact-support)
-- [View Ticket Management FAQ](/troubleshooting/faq#tickets)
+#### Access Problems
+- **Ticket not received**: Check spam folder, resend confirmation
+- **Invalid barcode**: Reissue ticket, verify purchase
+- **Access denied**: Check ticket type and event access rules
+
+## Next Steps
+
+### Additional Resources
+- [Video Tutorial: Advanced Ticketing](https://example.com)
+- [Pricing Strategy Webinar](#)
+- [API Documentation](#)
+
+### Related Guides
+- [Discounts & Promotions](./discounts-promotions)
+- [Check-in Management](../checkin/checkin-app)
+- [Financial Reporting](../finances/reports)
 
 ---
-*Last updated: June 1, 2024*
+*Last updated: June 1, 2024*  
+*Need help? Contact our [Support Team](#) or join our [Community Forum](#) for peer assistance.*
