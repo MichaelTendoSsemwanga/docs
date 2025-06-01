@@ -1,183 +1,489 @@
 ---
-title: "Building Your Event Mobile App with Loft"
-description: "Step-by-step guide to creating, customizing, and launching your event's mobile app using the Loft platform. Includes setup, branding, features, and engagement tools."
+title: "Loft Event Mobile App: Complete Guide"
+description: "Step-by-step guide to building, customizing, and managing your event's native and progressive web app with Loft. Includes setup, branding, features, and engagement tools."
 ---
 
-# Event Mobile App Setup Guide
+# Loft Event Mobile App Guide
 
-*Create a professional mobile app for your event in minutes with Loft's intuitive app builder. This guide walks you through every step from initial setup to app store submission and attendee engagement.*
+*Create a powerful, branded mobile experience for your event with Loft's intuitive app builder. This comprehensive guide covers everything from initial setup to advanced features and attendee engagement.*
 
-## Getting Started
+## Quick Start
+
+### System Requirements
+- **Loft Account**: Active subscription with app builder access
+- **Images**: 
+  - Logo: 1024x1024px (PNG, transparent background)
+  - Header: 1920x1080px (JPG/PNG)
+  - Speaker/Sponsor: 800x800px (JPG/PNG)
+- **Content**: 
+  - Event schedule (sessions, speakers, sponsors)
+  - Venue information
+  - Social media handles
 
 ### Accessing the App Builder
-1. Log in to your Loft account
-2. Go to **Events** > **Your Event** > **Mobile App**
-3. Click **Create App** to begin
+1. Log in to your Loft account at [app.loft.events](https://app.loft.events)
+2. Navigate to **Events** > **Your Event** > **Mobile App**
+3. Click **Create App** or **Edit App** to begin
 
-### Before You Begin
-- Have your event details ready (schedule, speakers, sponsors)
-- Prepare your logo and brand colors
-- Gather high-quality images (recommended size: 1024x500px for headers)
-- Know your target app features
+> **Pro Tip**: Bookmark the App Builder for quick access: [https://app.loft.events/events/your-event/app](https://app.loft.events/events/your-event/app)
 
-### Quick Links
-- [App Builder Dashboard](#)
-- [App Store Requirements](#)
-- [Design Guidelines](#)
-- [Feature Documentation](#)
+## Step 1: Configure App Settings
 
-## Step 1: Configure Basic Settings
-
-### 1.1 App Information
-1. **App Name**
-   - Enter your event name (max 30 characters for app stores)
-   - Add a short description (50 characters)
-   - Full description (4000 characters max)
+### 1.1 Basic Information
+1. **App Name & Details**
+   - **Display Name**: Max 30 characters (e.g., "TechConf 2024")
+   - **Short Description**: 50 characters for app stores
+   - **Full Description**: 4000 characters max (SEO optimized)
+   - **Keywords**: Comma-separated for app store optimization
 
 2. **App Type Selection**
-   - **Native App**: Full app store distribution
-     - Requires developer accounts
-     - Best for large events
-   - **Web App**: Instant access via browser
-     - No app store needed
-     - Quick setup
+   - **Native App** (Recommended)
+     - **Pros**: Full app store presence, push notifications, offline access
+     - **Requirements**: 
+       - Apple Developer Account ($99/year)
+       - Google Play Developer Account ($25 one-time)
+   - **Progressive Web App (PWA)**
+     - **Pros**: No app store needed, instant updates
+     - **Best for**: Smaller events, quick deployment
+   - **Hybrid** (Native + PWA)
+     - **Benefits**: Maximum reach and functionality
 
-### 1.2 App Store Setup (Native Only)
-1. **Apple App Store**
-   - Apple Developer Account ($99/year)
-   - App Store Connect setup
-   - Privacy policy URL required
+### 1.2 App Store Configuration
 
-2. **Google Play Store**
-   - Google Play Developer Account ($25 one-time)
-   - Store listing details
-   - Content rating questionnaire
+#### Apple App Store
+1. **Prerequisites**
+   - Active Apple Developer Program membership
+   - App Store Connect access
+   - Privacy policy URL (required)
 
-## Step 2: Customize Your App
+2. **Setup Process**
+   ```
+   App Store Connect > My Apps > + (New App)
+   ```
+   - Platform: iOS
+   - Bundle ID: com.yourcompany.yourevent
+   - SKU: YYYYMMDD-EVENT-CODE
+   - User Access: Full/App Manager
 
-### 2.1 Branding
-1. **Logo & Icons**
-   - Upload app icon (1024x1024px, PNG)
-   - Set splash screen (1242x2436px)
-   - Choose tab bar icons
+#### Google Play Store
+1. **Prerequisites**
+   - One-time $25 developer registration
+   - Google Play Developer account
+   - Privacy policy URL
+   - App content rating
 
-2. **Color Scheme**
-   - Primary & secondary colors
-   - Background colors
-   - Text colors (ensure contrast)
-   - Action button colors
+2. **Setup Process**
+   ```
+   Play Console > All Applications > Create Application
+   ```
+   - Default Language: English
+   - App Name: Your Event Name
+   - App Type: Application
+   - Free/Paid: Select as applicable
 
-### 2.2 Navigation
-1. **Menu Structure**
-   - Drag-and-drop menu items
-   - Reorder sections
-   - Set home screen
+## Step 2: Design & Branding
 
-2. **Tab Bar**
-   - Choose 3-5 main tabs
-   - Label clearly
-   - Use standard icons
+### 2.1 Brand Assets
+1. **App Icons**
+   - **Format**: PNG with transparent background
+   - **Sizes**:
+     - iOS: 1024x1024px (App Store)
+     - Android: 512x512px (Play Store)
+     - Web: 192x192px (PWA)
+   - **Best Practices**:
+     - Keep important content centered
+     - Avoid thin lines/small text
+     - Test on light/dark backgrounds
 
-## Step 3: Add Event Content
+2. **Splash Screens**
+   - **Dimensions**: 1242x2688px (iPhone), 1536x2048px (iPad)
+   - **Loading Indicator**: Customizable spinner color
+   - **Background**: Solid color or subtle gradient
 
-### 3.1 Core Sections
-1. **Schedule**
-   - Import from your Loft event
-   - Add sessions manually
-   - Set tracks and categories
+### 2.2 Color Scheme & Typography
 
-2. **Speakers**
-   - Add speaker profiles
-   - Include photos and bios
-   - Link to sessions
+#### Color Palette
+1. **Primary Colors**
+   - Brand color (used for main actions)
+   - Secondary color (accent)
+   - Background colors (light/dark mode)
 
-3. **Sponsors**
-   - Add sponsor logos
-   - Create sponsor tiers
-   - Link to sponsor websites
+2. **Accessibility**
+   - Minimum contrast ratio: 4.5:1 (WCAG AA)
+   - Test color combinations:
+     - Primary text on white
+     - White text on primary
+     - Secondary text on backgrounds
 
-### 3.2 Additional Content
-1. **Maps**
-   - Upload venue maps
-   - Set locations
-   - Add custom pins
+#### Typography
+1. **Font Selection**
+   - **System Fonts**: Default for performance
+   - **Custom Fonts**: Upload .ttf or .otf files
+   - **Recommended**:
+     - Headings: Bold, easy-to-read sans-serif
+     - Body: Clean, legible at small sizes
 
-2. **Documents**
-   - Upload PDFs
-   - Add links
-   - Organize in folders
+2. **Text Hierarchy**
+   - H1: 24-32px
+   - H2: 20-24px
+   - Body: 16-18px
+   - Captions: 12-14px
 
-## Step 4: Enable Features
+### 2.3 UI Components
 
-### 4.1 Engagement Tools
-1. **Networking**
-   - Enable attendee profiles
-   - Set up 1:1 messaging
-   - Create meetup scheduling
+#### Navigation
+1. **Tab Bar**
+   - Max 5 items
+   - Standard icons:
+     - Home
+     - Schedule
+     - Speakers
+     - Map
+     - More
 
-2. **Live Features**
-   - Push notifications
-   - Live polling
-   - Q&A sessions
+2. **Menu Structure**
+   ```
+   - Home
+   - Schedule
+     - Day 1
+     - Day 2
+   - Speakers
+   - Sponsors
+   - Venue
+   - My Schedule
+   - Notifications
+   - Profile
+   ```
 
-### 4.2 Analytics
-1. **Track Usage**
-   - User engagement
-   - Feature popularity
+#### Interactive Elements
+1. **Buttons**
+   - Primary: Solid, high contrast
+   - Secondary: Outlined
+   - Size: Min 44x44px touch target
+
+2. **Cards**
+   - Consistent corner radius (8-12px)
+   - Subtle shadow for depth
+   - Clear visual hierarchy
+
+## Step 3: Content Management
+
+### 3.1 Schedule & Sessions
+
+#### Importing Schedule
+1. **From Loft Event**
+   - Go to **Content** > **Schedule**
+   - Click **Import from Event**
+   - Map session fields:
+     - Title
+     - Date/Time
+     - Location
+     - Tracks
+     - Speakers
+
+2. **Manual Entry**
+   - Click **+ Add Session**
+   - Required fields:
+     - Session title
+     - Start/end time
+     - Location
+     - Session type
+   - Optional:
+     - Session description
+     - Speaker assignments
+     - Resources/attachments
+
+#### Session Types
+1. **Standard Session**
+   - Keynotes
+   - Breakout sessions
+   - Workshops
+
+2. **Special Sessions**
+   - Networking breaks
+   - Meals
+   - Social events
+   - Registration
+
+### 3.2 Speaker Management
+
+#### Adding Speakers
+1. **Individual Entry**
+   - **Name**: Full name
+   - **Title/Company**: Current position
+   - **Bio**: 150-200 words
+   - **Photo**: 800x800px (JPG/PNG)
+   - **Social Links**: Twitter, LinkedIn, etc.
+   - **Sessions**: Assign speaking sessions
+
+2. **Bulk Import**
+   - Download CSV template
+   - Fill in speaker details
+   - Upload to import
+   - Review and confirm
+
+#### Speaker Features
+- **Speaker Profiles**
+  - Detailed bio
+  - Session list
+  - Social media links
+  - Contact options
+- **Featured Speakers**
+  - Highlight on homepage
+  - Custom sort order
+  - Featured image
+
+### 3.3 Sponsors & Exhibitors
+
+#### Sponsor Tiers
+1. **Platinum**
+   - Logo on splash screen
+   - Featured section
+   - Session sponsorship
+
+2. **Gold**
+   - Logo in sponsor section
+   - Company profile
+   - Booth location
+
+3. **Silver/Bronze**
+   - Logo listing
+   - Basic profile
+
+#### Exhibitor Features
+- **Virtual Booths**
+  - Company description
+  - Logo and banner
+  - Resource downloads
+  - Contact form
+- **Lead Retrieval**
+  - QR code scanning
+  - Digital business cards
+  - Export leads
+
+### 3.4 Venue & Maps
+
+#### Venue Information
+1. **Location Details**
+   - Venue name
+   - Full address
+   - GPS coordinates
+   - Parking information
+   - Public transport
+
+2. **Interactive Maps**
+   - Floor plans
+   - Points of interest
+   - Custom pins
+   - Directions
+
+#### Map Features
+- **Layered Maps**
+  - Venue levels
+  - Session locations
+  - Amenities (restrooms, exits)
+- **Offline Access**
+  - Download maps
+  - Search functionality
+  - Saved locations
+
+### 3.5 Documents & Resources
+
+#### File Management
+1. **Supported Formats**
+   - PDF (recommended)
+   - Word/Excel/PowerPoint
+   - Images (JPG, PNG)
+   - Video links (YouTube, Vimeo)
+
+2. **Organization**
+   - Create folders
+   - Set access levels
+   - Track downloads
+
+#### Content Types
+- **Event Materials**
+  - Presentations
+  - Handouts
+  - Worksheets
+- **General Information**
+  - FAQs
+  - Transportation guide
+  - Local attractions
+
+## Step 4: Engagement Features
+
+### 4.1 Networking & Interaction
+
+#### Attendee Networking
+1. **Profiles**
+   - Custom fields
+   - Social links
+   - Contact visibility
+
+2. **Messaging**
+   - Direct messages
+   - Group chats
+   - Message templates
+
+3. **Matchmaking**
+   - AI-powered suggestions
+   - Common interests
+   - Meeting scheduling
+
+### 4.2 Live Engagement
+
+#### Real-time Features
+1. **Push Notifications**
+   - Schedule announcements
+   - Target segments
+   - Track opens/clicks
+
+2. **Live Polling**
+   - Multiple choice
+   - Word clouds
+   - Real-time results
+
+3. **Q&A**
+   - Session-specific Q&A
+   - Upvoting
+   - Moderation tools
+
+### 4.3 Gamification
+
+#### Points & Rewards
+1. **Earning Points**
    - Session attendance
+   - Visiting booths
+   - Completing profile
+   - Social interactions
 
-2. **Lead Retrieval**
-   - Set up lead capture
-   - Export leads
-   - Track scans
+2. **Leaderboard**
+   - Overall ranking
+   - Category leaders
+   - Daily/weekly winners
 
-## Step 5: Test & Launch
+## Step 5: Testing & Quality Assurance
 
-### 5.1 Testing
-1. **Preview**
-   - Use the Loft Preview app
-   - Test on iOS and Android
-   - Check all links and forms
+### 5.1 Pre-Launch Testing
 
-2. **Beta Testing**
-   - Invite testers
-   - Collect feedback
-   - Make final adjustments
+#### Device Testing
+1. **iOS Devices**
+   - Latest 3 iOS versions
+   - iPhone and iPad
+   - Different screen sizes
 
-### 5.2 App Store Submission
-1. **Prepare Assets**
-   - Screenshots (multiple sizes)
-   - App store descriptions
-   - Privacy policy
+2. **Android Devices**
+   - Multiple manufacturers
+   - Various OS versions
+   - Different screen densities
 
-2. **Submit for Review**
-   - Apple: 24-48 hour review
-   - Google: 1-3 day review
-   - Monitor status in dashboard
+### 5.2 Test Cases
 
-## Step 6: Promote Your App
-
-### 6.1 Pre-Event
-1. **Early Access**
-   - Email campaign
-   - Social media teasers
-   - Download incentives
-
-2. **On-Site**
-   - QR codes on signage
-   - Download stations
-   - Emcee announcements
-
-### 6.2 During Event
-1. **Gamification**
-   - Points for app actions
-   - Leaderboard
-   - Rewards
-
-2. **Updates**
+#### Core Functionality
+1. **User Flows**
+   - Registration/login
+   - Session browsing
+   - Profile setup
    - Push notifications
-   - Schedule changes
-   - Important announcements
+
+2. **Offline Mode**
+   - Content access
+   - Data submission
+   - Sync behavior
+
+## Step 6: Publish & Distribute
+
+### 6.1 App Store Submission
+
+#### Apple App Store
+1. **Prepare Assets**
+   - App Store screenshots
+   - App preview video
+   - Privacy policy URL
+   - Support URL
+
+2. **Submission Checklist**
+   - TestFlight testing complete
+   - App Store metadata ready
+   - Age rating configured
+   - Export compliance
+
+#### Google Play Store
+1. **Store Listing**
+   - Feature graphic
+   - Promo video
+   - Screenshots
+   - Content rating
+
+2. **Release Types**
+   - Internal testing
+   - Closed testing
+   - Open testing
+   - Production
+
+### 6.2 Web App Deployment
+
+#### PWA Configuration
+1. **Manifest**
+   - App name
+   - Icons
+   - Theme colors
+   - Display mode
+
+2. **Service Worker**
+   - Caching strategy
+   - Offline fallback
+   - Update notifications
+
+## Step 7: Post-Launch Management
+
+### 7.1 Analytics & Optimization
+
+#### Performance Metrics
+1. **User Engagement**
+   - Daily active users
+   - Session duration
+   - Screen flow
+
+2. **Feature Usage**
+   - Most used features
+   - Least used features
+   - Drop-off points
+
+### 7.2 Updates & Maintenance
+
+#### Version Updates
+1. **Bug Fixes**
+   - Crash reporting
+   - User feedback
+   - Performance issues
+
+2. **Feature Updates**
+   - New functionality
+   - UI improvements
+   - Performance enhancements
+
+## Support & Resources
+
+### Help Center
+- [App Builder Documentation](#)
+- [Video Tutorials](#)
+- [FAQs](#)
+
+### Contact Support
+- **Email**: [mobile-support@loft.events](mailto:mobile-support@loft.events)
+- **Phone**: +1 (555) 123-4590
+- **Live Chat**: Available in dashboard
+
+### Community
+- [User Forum](#)
+- [Feature Requests](#)
+- [Success Stories](#)
+
+---
+*Last updated: June 1, 2024*  
+*Need help with your event app? Our mobile experts are here to assist!*
 
 ## Troubleshooting
 
