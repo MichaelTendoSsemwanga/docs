@@ -1,54 +1,147 @@
-# Managing Event Orders
+---
+title: "Order Management: Complete How-To Guide"
+description: "Step-by-step guide to processing, tracking, and managing event orders in Loft. Learn how to handle sales, refunds, and customer communications effectively."
+---
 
-Efficiently process, track, and manage all your event orders in one place.
+# Order Management Guide
 
-## Order Dashboard
+*Streamline your event's financial operations with Loft's comprehensive order management system. This guide covers everything from processing sales to handling refunds and generating reports.*
 
-### Overview
-- Real-time order statistics
-- Revenue tracking
-- Ticket sales analytics
-- Top-selling ticket types
+## Quick Start: Process an Order
 
-### Filtering Orders
-- By date range
-- By ticket type
-- By order status (completed, pending, cancelled)
-- By payment method
+### Step 1: Access Order Management
+1. Log in to [Loft Dashboard](https://app.loft.events)
+2. Select your event
+3. Navigate to **Orders** > **All Orders**
+4. Click **+ New Order**
 
-## Processing Orders
+### Step 2: Create Manual Order
+1. **Select Tickets**
+   - Choose ticket type(s)
+   - Enter quantity
+   - Apply any promo codes
 
-### Manual Order Creation
-1. Navigate to **Orders** > **New Order**
-2. Select the event and ticket type
-3. Enter customer information
-4. Process payment
-5. Send confirmation email
+2. **Customer Information**
+   - Enter email (required)
+   - Add name, phone, company
+   - Check for existing profile
 
-### Order Statuses
-- **Pending**: Awaiting payment
-- **Completed**: Payment received
-- **Cancelled**: Order cancelled
-- **Refunded**: Full or partial refund issued
+3. **Process Payment**
+   - Select payment method
+   - Enter payment details
+   - Apply partial payments if needed
 
-## Customer Management
+4. **Complete Order**
+   - Review order summary
+   - Send confirmation email
+   - Print receipts/tickets
 
-### Customer Profiles
-- View order history
-- Track attendance
-- Manage contact preferences
-- Add notes or tags
+## Common Order Scenarios
 
-### Communication
-- Send order confirmations
-- Resend tickets
-- Send event reminders
-- Process refunds and cancellations
+### 1. Group Registration
+**Situation**: Company buying 10 tickets  
+**Steps**:
+1. Create new order
+2. Select ticket type (e.g., "Group Pass")
+3. Qty: 10
+4. Enter company billing details
+5. Process single payment
+6. Email tickets to organizer
 
-## Reporting & Analytics
+### 2. Complimentary Tickets
+**Situation**: Comp tickets for speakers  
+**Steps**:
+1. Create order
+2. Select "Speaker" ticket type
+3. Set price to $0
+4. Add internal note: "Speaker comp - [Event Name]"
+5. Disable payment step
 
-### Sales Reports
-- Export order data (CSV, Excel)
+### 3. Partial Refund
+**Situation**: Attendee downgrading ticket  
+**Steps**:
+1. Locate original order
+2. Click **Refund**
+3. Select partial refund
+4. Enter refund amount
+5. Process refund to original payment method
+6. Issue new ticket at lower price
+
+## Advanced Order Management
+
+### 1. Bulk Actions
+1. **Export Orders**
+   - Go to **Orders** > **Export**
+   - Select date range
+   - Choose fields to include
+   - Download as CSV/Excel
+
+2. **Update Multiple Orders**
+   - Filter orders
+   - Select multiple orders
+   - Choose action:
+     - Resend confirmations
+     - Update status
+     - Add tags
+
+### 2. Custom Order Statuses
+1. **Create Status**
+   - Go to **Settings** > **Order Statuses**
+   - Click **+ New Status**
+   - Define name, color, and rules
+
+2. **Automate Workflows**
+   - Set triggers based on status changes
+   - Example: Auto-email when status = "Shipped"
+
+## Real-World Examples
+
+### Conference Order Workflow
+```
+1. Order Received
+   - Auto-send confirmation
+   - Add to "Pending" list
+
+2. Payment Processed
+   - Move to "Confirmed"
+   - Send tickets
+   - Add to attendee list
+
+3. 7-Day Follow-up
+   - Check-in email
+   - Session selection reminder
+```
+
+### Workshop Registration
+1. **Immediate Actions**
+   - Send welcome email with prep materials
+   - Add to workshop-specific list
+   - Trigger pre-event survey
+
+2. **24h Before**
+   - Send Zoom link
+   - Reminder with schedule
+   - Materials download link
+
+## Troubleshooting & Support
+
+### Common Issues
+| Problem | Solution |
+|---------|-----------|
+| Missing confirmation | Check spam folder |
+| Payment declined | Verify card details |
+| Duplicate order | Check email filters |
+| Access issues | Resend tickets |
+
+### Get Help
+- **Live Chat**: In-app support
+- **Email**: [orders@loft.events](mailto:orders@loft.events)
+- **Phone**: (555) 123-4569 (Orders Dept)
+- **Help Docs**: [orders.loft.help](https://orders.loft.help)
+
+---
+*Last Updated: June 1, 2024*  
+*Need help with order management? Our support team is here to help you process orders efficiently.*
 - Filter by date, ticket type, or status
 - View gross and net revenue
 - Track discount code usage
