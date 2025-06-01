@@ -11,136 +11,146 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Getting Started",
+        "tab": "Get Started",
         "groups": [
           {
-            "group": "Introduction",
+            "group": "Welcome",
             "pages": [
-              "index",
-              "getting-started/welcome",
-              "getting-started/getting-started",
-              "getting-started/organization-setup"
+              "index.mdx",
+              "getting-started/welcome.mdx",
+              "getting-started/getting-started.mdx"
+            ]
+          },
+          {
+            "group": "Initial Setup",
+            "pages": [
+              "getting-started/organization-setup.mdx",
+              "essentials/settings.mdx"
             ]
           },
           {
             "group": "Essentials",
             "pages": [
-              "essentials/markdown",
-              "essentials/images",
-              "essentials/code",
-              "essentials/navigation",
-              "essentials/reusable-snippets",
-              "essentials/settings"
+              "essentials/markdown.mdx",
+              "essentials/images.mdx",
+              "essentials/code.mdx",
+              "essentials/navigation.mdx",
+              "essentials/reusable-snippets.mdx"
             ]
           }
         ]
       },
       {
-        "tab": "Events",
+        "tab": "Event Management",
         "groups": [
           {
-            "group": "Event Setup",
+            "group": "Create & Schedule",
             "pages": [
-              "events/creating-events",
-              "events/event-scheduling",
-              "events/accessibility",
-              "events/event-websites"
+              "events/creating-events.mdx",
+              "events/event-scheduling.mdx",
+              "events/event-websites.mdx"
             ]
           },
           {
-            "group": "Event Features",
+            "group": "Event Types",
             "pages": [
-              "events/virtual-events",
-              "events/live-streaming",
-              "events/networking",
-              "events/gamification",
-              "events/merchandise",
-              "events/security-safety",
-              "events/mobile-app"
+              "events/virtual-events.mdx",
+              "events/live-streaming.mdx",
+              "events/accessibility.mdx"
             ]
           },
           {
-            "group": "Speakers & Sponsors",
+            "group": "Engagement Features",
             "pages": [
-              "events/speaker-management",
-              "events/sponsors-exhibitors",
-              "events/sponsorships"
-            ]
-          },
-          {
-            "group": "Feedback & Analytics",
-            "pages": [
-              "events/surveys-feedback",
-              "analytics/event-metrics",
-              "analytics/event-reports"
+              "events/networking.mdx",
+              "events/gamification.mdx",
+              "events/mobile-app.mdx",
+              "events/security-safety.mdx"
             ]
           }
         ]
       },
       {
-        "tab": "Check-in & Tickets",
+        "tab": "Ticketing & Check-in",
         "groups": [
+          {
+            "group": "Ticketing",
+            "pages": [
+              "tickets/creating-ticket-types.mdx"
+            ]
+          },
           {
             "group": "Check-in System",
             "pages": [
-              "checkin/checkin-app",
-              "checkin/scanning-tickets",
-              "checkin/badge-printing",
-              "checkin/attendee-tracking",
-              "checkin/checkin-badges",
-              "checkin/custom-fields"
+              "checkin/checkin-app.mdx",
+              "checkin/scanning-tickets.mdx",
+              "checkin/attendee-tracking.mdx"
             ]
           },
           {
-            "group": "Ticket Management",
+            "group": "Badges & Identification",
             "pages": [
-              "tickets/creating-ticket-types"
-            ]
-          },
-          {
-            "group": "Orders & Sales",
-            "pages": [
-              "orders/order-management",
-              "orders-sales/checkin-scanning"
+              "checkin/badge-printing.mdx",
+              "checkin/checkin-badges.mdx",
+              "checkin/custom-fields.mdx"
             ]
           }
         ]
       },
       {
-        "tab": "Marketing & Community",
+        "tab": "Marketing & Sales",
         "groups": [
           {
             "group": "Marketing Tools",
             "pages": [
-              "marketing/email-campaigns",
-              "marketing/event-promotion"
+              "marketing/event-promotion.mdx",
+              "marketing/email-campaigns.mdx",
+              "events/merchandise.mdx"
             ]
           },
           {
-            "group": "Community",
+            "group": "Sales & Orders",
             "pages": [
-              "community/engagement"
+              "orders/order-management.mdx",
+              "orders-sales/checkin-scanning.mdx"
+            ]
+          },
+          {
+            "group": "Community & Networking",
+            "pages": [
+              "community/engagement.mdx",
+              "events/sponsors-exhibitors.mdx",
+              "events/sponsorships.mdx"
             ]
           }
         ]
       },
       {
-        "tab": "Organization",
+        "tab": "Team & Analytics",
         "groups": [
           {
             "group": "Team Management",
             "pages": [
-              "events/volunteer-management"
+              "events/volunteer-management.mdx",
+              "events/speaker-management.mdx"
             ]
           },
           {
-            "group": "Finances",
+            "group": "Financial Management",
             "pages": [
-              "finances/payment-setup",
-              "finances/payment-methods",
-              "finances/processing-payouts",
-              "finances/processing-refunds",
-              "finances/event-budgeting"
+              "finances/payment-setup.mdx",
+              "finances/payment-methods.mdx",
+              "finances/processing-payouts.mdx",
+              "finances/processing-refunds.mdx",
+              "finances/event-budgeting.mdx"
+            ]
+          },
+          {
+            "group": "Analytics & Feedback",
+            "pages": [
+              "analytics/event-metrics.mdx",
+              "analytics/event-reports.mdx",
+              "events/surveys-feedback.mdx"
             ]
           }
         ]
@@ -149,33 +159,34 @@
         "tab": "Advanced",
         "groups": [
           {
-            "group": "Analytics",
+            "group": "Integration",
             "pages": [
-              "advanced/analytics",
-              "guides/analytics-setup"
+              "advanced/api-integration.mdx"
             ]
           },
           {
-            "group": "Integration",
+            "group": "Customization",
             "pages": [
-              "advanced/api-integration"
+              "advanced/analytics.mdx",
+              "guides/analytics-setup.mdx",
+              "guides/theme-customization.mdx"
             ]
           },
           {
             "group": "Development",
             "pages": [
-              "development"
+              "development.mdx"
             ]
           }
         ]
       },
       {
-        "tab": "Help Center",
+        "tab": "Help & Support",
         "groups": [
           {
-            "group": "Support",
+            "group": "Resources",
             "pages": [
-              "help-center"
+              "help-center.mdx"
             ]
           }
         ]

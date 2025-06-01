@@ -4,40 +4,18 @@
       "group": "Getting Started",
       "pages": [
         "getting-started/welcome",
-        "getting-started/quickstart",
-        "getting-started/account-setup",
         "getting-started/organization-setup",
-        "getting-started/dashboard-tour"
+        "getting-started/getting-started"
       ]
     },
     {
       "group": "Event Management",
       "pages": [
         "events/creating-events",
-        "events/event-details",
         "events/event-scheduling",
-        "events/duplicating-events",
-        "events/cancelling-events"
-      ]
-    },
-    {
-      "group": "Tickets & Pricing",
-      "pages": [
-        "tickets/creating-ticket-types",
-        "tickets/pricing-strategies",
-        "tickets/discounts-promotions",
-        "tickets/add-ons",
-        "tickets/guest-checkout"
-      ]
-    },
-    {
-      "group": "Orders & Box Office",
-      "pages": [
-        "orders/order-management",
-        "orders/box-office",
-        "orders/processing-refunds",
-        "orders/order-reports",
-        "orders/customer-management"
+        "events/event-websites",
+        "events/virtual-events",
+        "events/live-streaming"
       ]
     },
     {
@@ -45,47 +23,93 @@
       "pages": [
         "checkin/checkin-app",
         "checkin/scanning-tickets",
-        "checkin/guest-lists",
-        "checkin/checkin-devices",
-        "checkin/checkin-reports"
+        "checkin/attendee-tracking",
+        "checkin/badge-printing",
+        "checkin/checkin-badges",
+        "checkin/custom-fields"
       ]
     },
     {
-      "group": "Finances & Payouts",
+      "group": "Orders & Sales",
+      "pages": [
+        "orders/order-management",
+        "finances/processing-refunds",
+        "orders-sales/checkin-scanning"
+      ]
+    },
+    {
+      "group": "Finances",
       "pages": [
         "finances/payment-methods",
+        "finances/payment-setup",
         "finances/processing-payouts",
-        "finances/financial-reports",
-        "finances/tax-settings",
-        "finances/invoicing"
+        "finances/event-budgeting"
       ]
     },
     {
-      "group": "Organization & Team",
+      "group": "Analytics",
       "pages": [
-        "organization/team-management",
-        "organization/user-roles",
-        "organization/organization-profile",
-        "organization/security-settings",
-        "organization/notifications"
+        "analytics/event-metrics",
+        "analytics/event-reports",
+        "advanced/analytics"
+      ]
+    },
+    {
+      "group": "Marketing",
+      "pages": [
+        "marketing/email-campaigns",
+        "marketing/event-promotion"
       ]
     },
     {
       "group": "Advanced Features",
       "pages": [
         "advanced/api-integration",
-        "advanced/webhooks",
-        "advanced/analytics",
-        "advanced/embedding",
-        "advanced/white-label"
+        "events/speaker-management",
+        "events/sponsors-exhibitors",
+        "events/sponsorships",
+        "events/volunteer-management",
+        "events/merchandise"
       ]
     },
     {
-      "group": "Troubleshooting",
+      "group": "Event Experience",
       "pages": [
-        "troubleshooting/common-issues",
-        "troubleshooting/contact-support",
-        "troubleshooting/faq"
+        "events/accessibility",
+        "events/gamification",
+        "events/mobile-app",
+        "events/networking",
+        "events/security-safety",
+        "events/surveys-feedback"
+      ]
+    },
+    {
+      "group": "Community",
+      "pages": [
+        "community/engagement"
+      ]
+    },
+    {
+      "group": "Help & Support",
+      "pages": [
+        "help-center"
+      ]
+    },
+    {
+      "group": "Development",
+      "pages": [
+        "development"
+      ]
+    },
+    {
+      "group": "Essentials",
+      "pages": [
+        "essentials/code",
+        "essentials/images",
+        "essentials/markdown",
+        "essentials/navigation",
+        "essentials/reusable-snippets",
+        "essentials/settings"
       ]
     }
   ]
