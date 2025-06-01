@@ -19,8 +19,7 @@
               "index",
               "getting-started/welcome",
               "getting-started/getting-started",
-              "getting-started/organization-setup",
-              "quickstart"
+              "getting-started/organization-setup"
             ]
           },
           {
@@ -44,7 +43,8 @@
             "pages": [
               "events/creating-events",
               "events/event-scheduling",
-              "events/accessibility"
+              "events/accessibility",
+              "events/event-websites"
             ]
           },
           {
@@ -55,7 +55,8 @@
               "events/networking",
               "events/gamification",
               "events/merchandise",
-              "events/security-safety"
+              "events/security-safety",
+              "events/mobile-app"
             ]
           },
           {
@@ -70,7 +71,8 @@
             "group": "Feedback & Analytics",
             "pages": [
               "events/surveys-feedback",
-              "analytics/event-metrics"
+              "analytics/event-metrics",
+              "analytics/event-reports"
             ]
           }
         ]
@@ -84,14 +86,15 @@
               "checkin/checkin-app",
               "checkin/scanning-tickets",
               "checkin/badge-printing",
-              "checkin/attendee-tracking"
+              "checkin/attendee-tracking",
+              "checkin/checkin-badges",
+              "checkin/custom-fields"
             ]
           },
           {
             "group": "Ticket Management",
             "pages": [
-              "tickets/creating-ticket-types",
-              "tickets/add-ons"
+              "tickets/creating-ticket-types"
             ]
           },
           {
@@ -127,7 +130,6 @@
           {
             "group": "Team Management",
             "pages": [
-              "organization/team-management",
               "events/volunteer-management"
             ]
           },
@@ -137,6 +139,7 @@
               "finances/payment-setup",
               "finances/payment-methods",
               "finances/processing-payouts",
+              "finances/processing-refunds",
               "finances/event-budgeting"
             ]
           }
@@ -162,6 +165,17 @@
             "group": "Development",
             "pages": [
               "development"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Help Center",
+        "groups": [
+          {
+            "group": "Support",
+            "pages": [
+              "help-center"
             ]
           }
         ]
