@@ -1,90 +1,229 @@
 ---
-title: Payment Setup
+title: "Complete Guide to Payment Processing"
+description: "Step-by-step guide to setting up, managing, and optimizing payment processing for your events. Accept payments securely and manage payouts with confidence."
 ---
 
-# Payment Processing Setup
+# Payment Processing: Complete Guide
 
-Configure your payment processing to start accepting payments for your events.
+*Streamline your event's financial operations with our comprehensive payment processing guide. From initial setup to advanced configurations, learn how to accept payments securely and manage your event finances efficiently.*
 
-## Supported Payment Methods
+## Table of Contents
+- [Before You Start](#before-you-start)
+- [Step 1: Choose Payment Methods](#step-1-payment-methods)
+- [Step 2: Set Up Your Account](#step-2-account-setup)
+- [Step 3: Configure Payment Settings](#step-3-configure)
+- [Step 4: Test Transactions](#step-4-testing)
+- [Step 5: Go Live](#step-5-go-live)
+- [Step 6: Manage Payouts](#step-6-payouts)
+- [Step 7: Handle Refunds](#step-7-refunds)
+- [Pro Tips & Best Practices](#pro-tips)
+- [Troubleshooting](#troubleshooting)
+- [Need Help?](#help)
 
-### Credit/Debit Cards
-- Visa
-- Mastercard
-- American Express
-- Discover
+## Before You Start
 
-### Digital Wallets
-- Apple Pay
-- Google Pay
-- PayPal
+### What You'll Need:
+- Business information (legal name, address, tax ID)
+- Bank account details
+- Government-issued ID
+- Business verification documents
 
-## Setting Up Your Payment Account
+### Quick Links:
+- [Payment Setup Checklist](#)
+- [Watch Setup Tutorial](#)
+- [Download Fee Calculator](#)
 
-### Step 1: Access Payment Settings
-1. Go to **Organization Settings** > **Payments**
+## Step 1: Choose Payment Methods
+
+### 1.1 Supported Payment Options
+| Method | Processing Time | Best For |
+|--------|----------------|----------|
+| **Credit/Debit Cards** | 2-3 business days | Global payments |
+| **Digital Wallets** | 1-2 business days | Mobile users |
+| **Bank Transfers** | 3-5 business days | High-value transactions |
+| **Alternative Payments** | Varies | Regional preferences |
+
+### 1.2 Regional Considerations
+- **North America**: Cards, ACH, PayPal
+- **Europe**: SEPA, Sofort, iDEAL
+- **Asia**: Alipay, WeChat Pay, GrabPay
+- **Latin America**: Boleto, OXXO, PIX
+
+## Step 2: Set Up Your Account
+
+### 2.1 Create Payment Account
+1. Go to **Organization** > **Payments**
 2. Click **Set Up Payments**
 3. Select your country/region
+4. Choose business type (Individual/Company/Non-profit)
 
-### Step 2: Business Information
-- Legal business name
-- Business address
-- Tax ID/EIN (if applicable)
-- Business type (Individual/Company/Non-profit)
+### 2.2 Business Verification
+1. **Business Information**
+   - Legal business name
+   - Business address
+   - Tax ID/EIN
+   - Website URL
 
-### Step 3: Bank Account
-- Account holder name
-- Routing number
-- Account number
-- Account type (Checking/Savings)
+2. **Owner Information**
+   - Full legal name
+   - Date of birth
+   - Home address
+   - Government ID upload
 
-### Step 4: Identity Verification
-- Upload government-issued ID
-- Provide personal information
-- Complete verification process
+## Step 3: Configure Payment Settings
 
-## Payout Schedule
+### 3.1 Payment Methods
+1. **Enable/Disable Methods**
+   - Toggle payment options
+   - Set default methods
+   - Configure country restrictions
 
-### Standard Payouts
-- First payout: 7-10 business days after first successful payment
-- Subsequent payouts: 2 business days after the payment is processed
+2. **Checkout Experience**
+   - Customize payment form
+   - Set currency options
+   - Configure tax settings
+   - Enable/disable guest checkout
 
-### Payout Thresholds
-- Minimum payout: $10.00
-- Maximum per transaction: $50,000.00
+### 3.2 Security & Compliance
+- **PCI Compliance**: Automatic with Loft
+- **3D Secure**: Enable for high-risk transactions
+- **Fraud Prevention**: Set rules and filters
+- **Data Retention**: Configure storage policies
 
-## Fees & Pricing
+## Step 4: Test Transactions
 
-### Processing Fees
-- Credit/Debit cards: 2.9% + $0.30 per transaction
-- International cards: 3.9% + $0.30 per transaction
-- ACH transfers: 1% ($1 maximum fee)
+### 4.1 Test Mode Setup
+1. Enable **Test Mode** in settings
+2. Use test card numbers:
+   - Success: 4242 4242 4242 4242
+   - Decline: 4000 0000 0000 0002
+   - Authentication Required: 4000 0025 0000 3155
 
-### No Hidden Fees
-- No monthly fees
-- No setup fees
-- No cancellation fees
+### 4.2 Test Scenarios
+1. Successful payment
+2. Failed payment
+3. Refund process
+4. Webhook notifications
+5. Email confirmations
 
-## Security & Compliance
+## Step 5: Go Live
 
-### PCI Compliance
-- All transactions are PCI-DSS compliant
-- Sensitive data is encrypted
-- Regular security audits
+### 5.1 Pre-Launch Checklist
+- [ ] Verify business information
+- [ ] Test all payment methods
+- [ ] Set up email notifications
+- [ ] Configure receipt templates
+- [ ] Enable fraud filters
 
-### Data Protection
-- Tokenization of payment information
-- Fraud detection and prevention
-- Secure data storage
+### 5.2 Activate Live Mode
+1. Complete verification
+2. Process test payout
+3. Enable live payments
+4. Monitor transactions
+
+## Step 6: Manage Payouts
+
+### 6.1 Payout Schedule
+| Option | Processing Time | Fee |
+|--------|----------------|-----|
+| **Standard** | 2 business days | Free |
+| **Express** | Next business day | 1% |
+| **Custom** | Set your own | Varies |
+
+### 6.2 Payout Methods
+1. **Bank Transfer** (Recommended)
+   - Routing & account numbers
+   - SWIFT/IBAN for international
+   - Verification deposits
+
+2. **Alternative Methods**
+   - PayPal
+   - Payoneer
+   - Check (additional fees apply)
+
+## Step 7: Handle Refunds
+
+### 7.1 Refund Process
+1. Go to **Orders** > **Transactions**
+2. Select transaction
+3. Click **Issue Refund**
+4. Choose amount (full/partial)
+5. Add reason (optional)
+6. Process refund
+
+### 7.2 Refund Policies
+- **Full Refunds**: 100% back to original payment method
+- **Partial Refunds**: Specify amount and reason
+- **Timeframe**: Process within 5-10 business days
+- **Notification**: Automatic email to customer
+
+## Pro Tips & Best Practices
+
+### Security Measures
+1. **Fraud Prevention**
+   - Enable AVS and CVV checks
+   - Set transaction limits
+   - Monitor for suspicious activity
+
+2. **Compliance**
+   - Keep records for 7+ years
+   - Display refund policy clearly
+   - Stay updated on tax regulations
+
+### Optimization
+1. **Checkout Flow**
+   - Minimize form fields
+   - Show accepted payment methods
+   - Display security badges
+
+2. **International Sales**
+   - Offer local payment methods
+   - Display prices in local currency
+   - Handle VAT/GST appropriately
 
 ## Troubleshooting
 
-### Common Issues
-- **Verification failed?** Ensure all information matches your bank records
-- **Payout delayed?** Check for holidays or bank processing times
-- **Payment declined?** Verify sufficient funds and card details
+### Common Issues & Solutions
 
-## Next Steps
-- [Understanding Payouts](./understanding-payouts)
-- [Tax & Invoices](./tax-invoices)
-- [Managing Refunds](../orders-sales/processing-refunds)
+#### Payment Failures
+1. **Problem**: Card declined
+   - Verify card details
+   - Check with bank for restrictions
+   - Try alternative payment method
+
+2. **Problem**: 3D Secure failure
+   - Contact card issuer
+   - Complete verification
+   - Try different browser/device
+
+#### Payout Issues
+1. **Problem**: Payout delayed
+   - Check processing times
+   - Verify bank details
+   - Look for verification requests
+
+2. **Problem**: Incorrect amount
+   - Review transaction fees
+   - Check for refunds/chargebacks
+   - Contact support if needed
+
+## Need Help?
+
+### Immediate Support
+- **In-App Chat**: Available in the dashboard
+- **Phone**: (555) 123-4573 (24/7 support)
+- **Email**: payments@loft.events
+
+### Learning Resources
+- [Payment Processing Guide](#)
+- [Video Tutorials](#)
+- [Compliance Checklist](#)
+
+### Community & Support
+- [Help Center](#)
+- [Merchant Forum](#)
+- [FAQs](#)
+
+---
+*Last updated: June 1, 2024*  
+*Need help with payments? Our team is here to assist!*

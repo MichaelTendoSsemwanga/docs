@@ -1,109 +1,217 @@
+---
+title: "Payment Methods & Processing"
+description: "Comprehensive guide to available payment methods, their setup, and best practices for event organizers. Learn how to configure and optimize payment options for your events."
+---
+
 # Payment Methods & Processing
 
-Configure and manage payment options for your events with Loft's secure payment processing.
+*Offer flexible, secure payment options to your attendees while maintaining control over your event's financial operations. This guide covers all available payment methods, their setup, and optimization strategies.*
 
-## Supported Payment Methods
+## Table of Contents
+- [Payment Method Types](#types)
+- [Regional Availability](#regional)
+- [Setup & Configuration](#setup)
+- [Fees & Processing Times](#fees)
+- [Security Features](#security)
+- [Attendee Experience](#attendee)
+- [Troubleshooting](#troubleshooting)
+- [Need Help?](#help)
 
-### Credit/Debit Cards
-- Visa
-- Mastercard
-- American Express
-- Discover
-- JCB
-- UnionPay
+## Payment Method Types {#types}
 
-### Digital Wallets
-- Apple Pay
-- Google Pay
-- Alipay
-- WeChat Pay
+### 1. Credit & Debit Cards
+#### Supported Networks
+- **Visa** (All regions)
+- **Mastercard** (All regions)
+- **American Express** (All regions)
+- **Discover** (US, Canada, China)
+- **UnionPay** (China, Asia)
+- **JCB** (Japan, Asia)
 
-### Bank Transfers
-- ACH (US)
-- SEPA (EU)
-- BACS (UK)
-- Direct Debit
+#### Setup Requirements
+- PCI DSS compliance (handled by Loft)
+- Basic business verification
+- No additional accounts needed
 
-## Setting Up Payment Methods
+### 2. Digital Wallets
 
-### For Event Organizers
+#### Supported Wallets
+| Wallet | Regions | Best For |
+|--------|---------|----------|
+| **Apple Pay** | 60+ countries | iOS users, in-person payments |
+| **Google Pay** | 40+ countries | Android users, online checkout |
+| **Alipay** | China, Asia | Chinese attendees |
+| **WeChat Pay** | China, Asia | Chinese attendees |
+| **GrabPay** | Southeast Asia | Mobile-first users |
+| **Sofort** | Europe | Bank transfers in EU |
+
+#### Setup Process
+1. Enable in payment settings
+2. Complete additional verification (if required)
+3. Test transactions
+
+### 3. Bank Transfers & Direct Debit
+
+#### Available Methods
+- **ACH** (US, Canada)
+- **SEPA** (EU/EEA)
+- **BACS** (UK)
+- **PIX** (Brazil)
+- **iDEAL** (Netherlands)
+- **Boleto** (Brazil)
+- **OXXO** (Mexico)
+
+#### Setup Requirements
+- Verified business account
+- Local bank account (in most cases)
+- Additional verification documents
+
+## Regional Availability {#regional}
+
+### North America
+- **Primary**: Cards, ACH, Apple Pay, Google Pay
+- **Alternatives**: PayPal, Venmo (US)
+- **Processing**: 1-3 business days
+
+### Europe
+- **Primary**: Cards, SEPA, Sofort, iDEAL
+- **Alternatives**: Giropay, Bancontact
+- **Processing**: 1-2 business days (SEPA)
+
+### Asia Pacific
+- **Primary**: Cards, Alipay, WeChat Pay, GrabPay
+- **Alternatives**: PayNow (Singapore), PayID (Australia)
+- **Processing**: 1-3 business days
+
+### Latin America
+- **Primary**: Cards, PIX, OXXO, Boleto
+- **Alternatives**: Mercado Pago
+- **Processing**: 3-5 business days (bank transfers)
+
+## Setup & Configuration {#setup}
+
+### Enabling Payment Methods
 1. Go to **Finances** > **Payment Methods**
-2. Click **Add Payment Method**
-3. Select your preferred payment processor
-4. Complete the verification process
-5. Set as default (optional)
+2. Toggle on desired methods
+3. Configure country restrictions
+4. Set default methods
+5. Save changes
 
-### For Attendees
-1. During checkout, select **Add Payment Method**
-2. Choose your preferred payment type
+### Method-Specific Settings
+
+#### Credit/Debit Cards
+- Enable/disable card types
+- Set up 3D Secure
+- Configure AVS checks
+- Set transaction limits
+
+#### Digital Wallets
+- Upload button assets
+- Configure display options
+- Set up automatic detection
+
+#### Bank Transfers
+- Upload company logo
+- Set payment instructions
+- Configure expiration period
+- Enable automatic reminders
+
+## Fees & Processing Times {#fees}
+
+### Transaction Fees
+| Method | Standard Fee | International Fee | Notes |
+|--------|-------------|-------------------|-------|
+| Credit/Debit | 2.9% + $0.30 | 3.9% + $0.30 | Lower for non-profits |
+| Digital Wallets | 2.5% + $0.30 | 3.5% + $0.30 | Varies by region |
+| Bank Transfers | 1% ($1 max) | 2% ($2 max) | Higher for some regions |
+| Alternative | 3-5% | Varies | Depends on method |
+
+### Processing Times
+- **Cards**: 2-3 business days
+- **Digital Wallets**: 1-2 business days
+- **Bank Transfers**: 3-5 business days
+- **Alternative Methods**: Varies (1-7 days)
+
+## Security Features {#security}
+
+### Built-in Protections
+- **PCI DSS Level 1** compliance
+- **3D Secure 2.0** authentication
+- **Tokenization** of sensitive data
+- **Fraud detection** algorithms
+- **Address Verification** (AVS)
+- **CVV/CVC** verification
+
+### Compliance Standards
+- **GDPR** (EU)
+- **PSD2** (Europe)
+- **Strong Customer Authentication** (SCA)
+- **Local regulations** (varies by country)
+
+## Attendee Experience {#attendee}
+
+### Checkout Flow
+1. Select tickets
+2. Choose payment method
 3. Enter payment details
-4. Save for future purchases (optional)
+4. Complete authentication (if required)
+5. Receive confirmation
 
-## Payment Processing
+### Saved Payment Methods
+- Enable/disable for users
+- Set expiration policies
+- Require re-authentication
+- Display saved methods at checkout
 
-### Transaction Flow
-1. Attendee completes purchase
-2. Payment is authorized
-3. Funds are held securely
-4. Payout is processed according to your schedule
+### Receipts & Invoices
+- Customize email templates
+- Include payment details
+- Add tax information
+- Download PDF receipts
 
-### Processing Fees
-| Payment Method | Fee | Processing Time |
-|---------------|-----|----------------|
-| Credit Cards | 2.9% + $0.30 | 2-3 business days |
-| Digital Wallets | 2.5% + $0.30 | 1-2 business days |
-| Bank Transfers | 1% (max $10) | 3-5 business days |
+## Troubleshooting {#troubleshooting}
 
-## Security & Compliance
+### Common Issues & Solutions
 
-### PCI Compliance
-- All payments are PCI DSS Level 1 compliant
-- Credit card data is never stored on our servers
-- Tokenization for secure recurring payments
+#### Payment Declined
+1. **Card Issues**
+   - Check for typos
+   - Verify sufficient funds
+   - Contact card issuer
 
-### Fraud Prevention
-- Advanced fraud detection
-- 3D Secure authentication
-- Address verification (AVS)
+2. **Authentication Failed**
+   - Complete 3D Secure
+   - Try different browser/device
+   - Contact bank for verification
 
-## Managing Payouts
+#### Missing Payouts
+1. **First Payout**
+   - 7-10 day holding period
+   - Complete verification
+   - Check for verification emails
 
-### Payout Schedule
-- **Standard**: Weekly payouts (Tuesdays)
-- **Express**: Next business day (additional 1% fee)
-- **Custom**: Set your own schedule
+2. **Ongoing Payouts**
+   - Check payout schedule
+   - Verify bank details
+   - Look for processing delays
 
-### Payout Methods
-- Direct to bank account (recommended)
-- Paper check (additional fees apply)
-- PayPal (for international payouts)
+## Need Help? {#help}
 
-## Troubleshooting
+### Support Resources
+- **Payment Status**: Check in dashboard
+- **FAQ**: [Payment Questions](#)
+- **Guides**: [Setting Up Payments](#)
 
-### Common Issues
-| Issue | Solution |
-|-------|----------|
-| Payment declined | Verify card details, check with bank |
-| Missing payout | Check processing schedule, verify bank details |
-| Refund issues | Contact support for assistance |
+### Contact Support
+- **Email**: payments@loft.events
+- **Phone**: (555) 123-4573
+- **In-App Chat**: Available 24/7
 
-## Best Practices
-
-### For Event Organizers
-- Offer multiple payment options
-- Be transparent about fees
-- Set clear refund policies
-- Monitor transactions regularly
-
-### For Attendees
-- Use saved payment methods for faster checkout
-- Keep payment information up to date
-- Review receipts and confirmations
-
-## Need Help?
-- [Contact Support](/troubleshooting/contact-support)
-- [Payment FAQ](/troubleshooting/faq#payments)
-- [View Processing Status](#)
+### Additional Resources
+- [PCI Compliance Guide](#)
+- [International Payment Tips](#)
+- [Reducing Processing Fees](#)
 
 ---
-*Last updated: June 1, 2024*
+*Last updated: June 1, 2024*  
+*Need help with payment methods? Our support team is here to assist!*
